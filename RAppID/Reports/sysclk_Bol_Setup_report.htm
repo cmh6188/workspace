@@ -1,0 +1,866 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: SYSTEM CLOCK  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><center><h3><font face='Arial'></font></h3></center>
+
+<br><br><center><h3><font face='Arial'></font></h3></center>
+
+<font face='arial'><h3><font face='Arial'>System Clock setup</font></h3><br>The System Clock is selected as <u><font face='arial' color='blue'>16MHz internal RC oscillator </font></u> with settings given in following table<br><br></font> <TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="6" bgcolor= "#CCFFCC"><b><center><h3>Clock Source Configuration</h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Clock Source</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Bypass</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Divider</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>End of Count value</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Interrupt</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Trim</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>XOSC (<u><font face='arial' color='blue'>8.0</font></u> MHz)</font> </TD>
+<TD ><u><font face='arial' color='blue'>Disabled</font></u></TD>
+<TD ><u><font face='arial' color='blue'>1</font></u></TD>
+<TD ><u><font face='arial' color='blue'>0x80</font></u></TD>
+<TD ><u><font face='arial' color='blue'>Disabled</font></u></TD>
+<TD ><u><font face='arial' color='blue'></font></u></TD>
+</TR>
+<TR>
+<TD ><font face='arial'>16MHZ IRC</font> </TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><u><font face='arial' color='blue'>1</font></u></TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><u><font face='arial' color='blue'>0x0</font></u></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="9" bgcolor= "#CCFFCC"><b><center><h3>Low Power Oscillator Configuration</h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Clock Source</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Bypass</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Status</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Divider</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>End of Count value</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Interrupt</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Trim</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Standby</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Low Power Clocks(KHz)</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>LP XOSC 32KHz</font> </TD>
+<TD ><u><font face='arial' color='blue'>Disabled</font></u></TD>
+<TD ><u><font face='arial' color='blue'>Disabled</font></u></TD>
+<TD ><u><font face='arial' color='blue'>1</font></u></TD>
+<TD ><u><font face='arial' color='blue'>0x80</font></u></TD>
+<TD ><u><font face='arial' color='blue'>Disabled</font></u></TD>
+<TD ><u><font face='arial' color='blue'></font></u></TD>
+<TD ><u><font face='arial' color='blue'></font></u></TD>
+<TD ><u><font face='arial' color='blue'>32.000</font></u></TD>
+</TR>
+<TR>
+<TD ><font face='arial'>128KHz Slow IRC</font> </TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><u><font face='arial' color='blue'>4</font></u></TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><font face='arial'></font> </TD>
+<TD ><u><font face='arial' color='blue'>0x0</font></u></TD>
+<TD ><u><font face='arial' color='blue'>Disabled</font></u></TD>
+<TD ><u><font face='arial' color='blue'>32.000</font></u></TD>
+</TR>
+</TABLE>
+<font face='arial'><br><br>The value for system Clock Frequency is,<br>System Clock Frequency = <u><font face='arial' color='blue'>16MHz IRC</font></u><br><br>System Clock Frequency = <u><font face='arial' color='blue'>16.000</font></u> MHz<br><br><br><br>Progressive Clock Switching  <u><font face='arial' color='blue'>Disabled</font></u> and Input Division Factor(IDF) set to <br><u><font face='arial' color='blue'>2</font></u> ,Output Division Factor(ODF) Set to <u><font face='arial' color='blue'>4</font></u> and Loop Division Factor (LDF) set to  <u><font face='arial' color='blue'> 64</font></u><br><br>  Final Reference Frequency Multiplier = LDF / (IDF * ODF)  <br>= <u><font face='arial' color='blue'>64/(2*4)</font></u><br>= <u><font face='arial' color='blue'>8.000</font></u><br><br>  PLL Output Frequency = XOSC Frequency * Final Reference Frequency Multiplier  <br>= <u><font face='arial' color='blue'>16.000 * 8.000</font></u><br>= <u><font face='arial' color='blue'>64.000</font></u> MHz<br><br>  VCO Frequency = XOSC Frequency * (LDF / IDF)  <br>= <u><font face='arial' color='blue'>16.000 * ( 64 / 2 )</font></u><br>= <u><font face='arial' color='blue'>256.000</font></u> MHz<br><br>  Frequency Modulation is <u><font face='arial' color='blue'>Disabled</font></u>  with Spread Type set to <u><font face='arial' color='blue'>Center Spread</font></u>  and the Modulation Period and Increment Step  are set to  <u><font face='arial' color='blue'>0</font></u>  and <u><font face='arial' color='blue'>0</font></u> respectively.<br><br>In Clock Output Setup, Clock Output is <u><font face='arial' color='blue'>Disabled</font></u>  and Clock Output Source is set to <u><font face='arial' color='blue'>Crystal Oscillator</font></u> Clock Divider is set to <u><font face='arial' color='blue'>1</font></u>.<br><br> Clock Output frequency = Clock Output Source /Clock Divider<br>= <u><font face='arial' color='blue'>8.000</font></u><u><font face='arial' color='blue'> MHz</font></u><br><br> Output Clock Pin : = <u><font face='arial' color='blue'>16 (PA0) - Not Assigned</font></u><br><br> For Peripheral Clock Setup,<br><br>Divider for Set 1(LINFlex & I2C) is <u><font face='arial' color='blue'>Enabled</font></u> with Divider as <u><font face='arial' color='blue'>1</font></u><br><br>Divider for Set 2(FlexCAN & DSPI) is  <u><font face='arial' color='blue'>Enabled</font></u> with Divider as <u><font face='arial' color='blue'>1</font></u><br><br>Divider for Set 3(eMIOS,ADC & CTU) is  <u><font face='arial' color='blue'>Enabled</font></u> with Divider as <u><font face='arial' color='blue'>1</font></u><br><br>.Final Clock for all the three peripheral sets is as follows,<br><br>Set 1 (LINFlex & I2C)<br>Final Clock = System Clock Frequency / Divider<br>= <u><font face='arial' color='blue'>16.000/1</font></u><br>= <u><font face='arial' color='blue'>16.000</font></u> MHz<br><br>Set 2 (FlexCAN & DSPI)<br>Final Clock = System Clock Frequency / Divider<br>= <u><font face='arial' color='blue'>16.000/1</font></u><br>= <u><font face='arial' color='blue'>16.000</font></u> MHz<br><br>Set 3 (eMIOS,ADC & CTU)<br>Final Clock = System Clock Frequency / Divider<br>= <u><font face='arial' color='blue'>16.000/1</font></u><br>= <u><font face='arial' color='blue'>16.000</font></u> MHz</font> <font face='arial'><br><br><b><font face='Arial'>Register</font></b><br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ME_DRUN_MC</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/ME_DRUN_MC.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Mode Configuration Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FDC02C : 0x2C</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x001F0030 : 0x001F0010</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Mode Configuration Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PDO</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>I/O Power-Down Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9-10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MVRON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Main Voltage Regulator Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12-13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DFLAON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>11</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Data Flash Power-Down Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CFLAON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>11</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Code Flash Power-Down Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-24</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>25</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FMPLLON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>System PLL (PLL0) Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>26</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FXOSCON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Crystal Oscillator Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>27</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FIRCON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>16MHz Internal RC Control</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>28-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SYSCLK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>System Clock mode :  16MHz internal RC oscillator </font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_OSC_CTL</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_OSC_CTL.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Crystal Oscillator Control Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0000 : 0x0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00800000 : 0x00800000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Crystal Oscillator Control Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OSCBYP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Oscillator Output is  Enabled as rootclock</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'></font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EOCV[7:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>10000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The End of Value Count for XOSC= 0x80</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>M_OSC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The XOSC Clock Interrupt: Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17-18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'></font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OSCDIV[4:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The XOSC Clock Divider = 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>I_OSC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Crystal oscillator clock interrupt</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>25-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_RC_CTL</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_RC_CTL.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>RC Oscillator Control Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0060 : 0x0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>RC Oscillator Control Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RCTRIM[5:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>IRC Trim: 0x0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RCDIV[4:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The 16MHz IRC Clock Divider  1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_FMPLL_CR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_FMPLLn_CR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>FMPLL Control Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE00A0 : 0xA0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x05400000 : 0x05400000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>FMPLL Control Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2-5</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IDF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0001</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Division Factor:  2</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>6-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ODF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>01</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Output Division Factor:  4</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>NDIV</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Loop Division Factor:  64</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-22</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EN_PLL_SW</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Progressive Clock Switching: Disabled </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>Mode</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This bit is used to activate the PLL 1:1 Mode.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>25</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>UNLOCK_ONCE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>A sticky indication of PLL loss of lock condition.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>26</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>27</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>I_LOCK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Set by hardware whenever there is a lock/unlock event.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>28</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>S_LOCK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Indication of whether the PLL has acquired lock.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>29</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PLL_FAIL_MASK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Used to mask the pll_fail output</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PLL_FAIL_FLAG</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Asynchronously set by hardware whenever a 		loss of lock event occurs while PLL is switched on.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_FMPLL_MR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_FMPLLn_MR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>FMPLL Modulation Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE00A4 : 0xA4</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>FMPLL Modulation Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>STRB_BYPASS</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Used to bypass the STRB signal used inside PLL to latch the correct values for control bits (INC_STEP, MOD_PERIOD and SPRD_SEL).</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SPRD_SEL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The selected Spread Type: Center Spread</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MOD_PERIOD[12:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Modulation Period for FMPLL0: 0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FM_EN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Frequency modulation for PLL0: Disabled </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INC_STEP[14:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Increment Step for FMPLL0: 0</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_LPOSC_CTL</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_LPOSC_CTL.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Crystal Oscillator Control Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0040 : 0x40</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00800000 : 0x00800000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Crystal Oscillator Control Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OSCBYP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Oscillator Output is  Enabled as rootclock</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'></font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EOCV[7:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>10000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The End of Value Count for XOSC= 0x80</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>M_OSC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The XOSC Clock Interrupt: Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17-18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'></font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OSCDIV[4:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The XOSC Clock Divider = 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>I_OSC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Crystal oscillator clock interrupt</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>25-29</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>S_OSC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Crystal Oscillator Status</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OSCON</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Crystal Oscillator Powerdown Control = Disabled</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_LPRC_CTL</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_LPRC_CTL.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Low Power RC Control Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0080 : 0x80</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000310 : 0x00000310</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Low Power RC Control Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'></font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LPRCTRIM[4:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>LPRC Oscillator Trimming : 0x0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LPRCCDIV[4:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00011</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The LP RC Clock Divider = 4</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-26</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>27</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>S_LPRC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Low Power RC clock status</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>28-30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LPRCON_STDBY</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>LPRC Oscillator is switched On in Standby Mode</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_OC_EN</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_OC_EN.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Output Clock Enable Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0370 : 0x370</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Output Clock Enable Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Output Clock: Disabled</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_OCDS_SC</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_OCDS_SC.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Output Clock Division Select Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0374 : 0x374</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Output Clock Division Select Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2-3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SELDIV</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Clock Divider: 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SELCTL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Output Clock Source: Crystal Oscillator</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_SC_DC0</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_SC_DCn.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>System Clock Divider Configuration Registers</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE037C : 0x37C</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x80 : 0x80</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>System Clock Divider Configuration Registers</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DE0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Peripheral Set 1 Clock Divider: Enabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIV0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Peripheral Clock Set 1 Divider = 1</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_SC_DC1</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_SC_DCn.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>System Clock Divider Configuration Registers</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE037D : 0x37D</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x80 : 0x80</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>System Clock Divider Configuration Registers</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DE0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Peripheral Set 2 Clock Divider: Enabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIV0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Peripheral Clock Set 2 Divider = 1</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CGM_SC_DC2</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/SYSCLK/CGM_SC_DCn.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>System Clock Divider Configuration Registers</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE037E : 0x37E</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x80 : 0x80</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>System Clock Divider Configuration Registers</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DE0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Peripheral Set 3 Clock Divider: Enabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIV0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Peripheral Clock Set 3 Divider = 1</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

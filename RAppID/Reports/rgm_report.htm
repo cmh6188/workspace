@@ -1,0 +1,664 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: RGM  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><center><h3><font face='Arial'></font></h3></center>
+
+<font face='arial'><b><font face='Arial'>Overview</font></b><br><br><font face='arial'>RGM module provides the register interface to monitor and control the device reset sequence. Module centralizes the different reset sources and configures them to Enable or Disable the system reset. The reset sequencer is a state machine having different phases (PHASE0, PHASE1, PHASE2, PHASE3, and IDLE). RGM also enables to have complete or short reset sequence for individual reset sources.</font> <br><br><b><font face='Arial'>Destructive Event</font></b><br><b><font face='Arial'>1. 2.7V low-voltage detected</font></b><br><br><font face='arial'>Reset sequence is set to</font> trigger a reset sequence<br><font face='arial'>Alternate Request type set to </font>  generate a SAFE mode request event if the reset is disabled<br><br><b><font face='Arial'>2. Software watchdog timer</font></b><br><br><font face='arial'>Reset sequence is set to  </font> trigger a reset sequence<br><font face='arial'>Alternate Request type set to </font>  generate a SAFE mode request event if the reset is disabled<br><br><b><font face='Arial'>3. 1.2V low-voltage detected (power domain #1)</font></b><br><font face='arial'>Reset sequence is set to  </font> trigger a reset sequnce<br><font face='arial'>Alternate Request type set to </font> to generate a SAFE mode request event if the reset is disabled<br><br><b><font face='Arial'>4. 1.2V low-voltage detected (power domain #0)</font></b><br><font face='arial'>Reset sequence is set to  </font> trigger a reset sequence<br><font face='arial'>Alternate Request type set to </font>  generate a SAFE mode request event if the reset is disabled<br><br><b><font face='Arial'>Functional Event</font></b><br><b><font face='Arial'>1. Code or data flash fatal error</font></b><br><br><font face='arial'>Reset sequence is set to  </font> trigger a reset sequence<br><font face='arial'>Alternate Request type set to </font>  generate a SAFE mode request event if the reset is disabled<br><font face='arial'>ShortSequence reset is set to </font> Start From PHASE1 <br><font face='arial'>Bidirectional Reset is set to </font> External Reset asserted<br><br><b><font face='Arial'>2. 4.5V low-voltage detected</font></b><br><br><font face='arial'>Reset sequence is set to  </font> <u><font face='arial' color='blue'>trigger a reset sequence</font></u><br><font face='arial'>Alternate Request type set to </font> <u><font face='arial' color='blue'> generate a SAFE mode request event if the reset is disabled</font></u><br><font face='arial'>ShortSequence reset is set to </font> <u><font face='arial' color='blue'>Start From PHASE1 </font></u><br><font face='arial'>Bidirectional Reset is set to </font> <u><font face='arial' color='blue'>External Reset asserted</font></u><br><br><b><font face='Arial'>3. CMU0 clock frequency higher/lower than reference</font></b><br><br><font face='arial'>Reset sequence is set to  </font> <u><font face='arial' color='blue'>trigger a reset sequence</font></u><br><font face='arial'>Alternate Request type set to </font> <u><font face='arial' color='blue'> generate a SAFE mode request event if the reset is disabled</font></u><br><font face='arial'>ShortSequence reset is set to </font> <u><font face='arial' color='blue'>Start From PHASE1 </font></u><br><font face='arial'>Bidirectional Reset is set to </font> <u><font face='arial' color='blue'>External Reset asserted</font></u><br><br><b><font face='Arial'>4. Oscillator frequency lower than reference</font></b><br><br><font face='arial'>Reset sequence is set to  </font> <u><font face='arial' color='blue'>trigger a reset sequence</font></u><br><font face='arial'>Alternate Request type set to </font> <u><font face='arial' color='blue'> generate a SAFE mode request event if the reset is disabled</font></u><br><font face='arial'>ShortSequence reset is set to </font> <u><font face='arial' color='blue'>Start From PHASE1 </font></u><br><font face='arial'>Bidirectional Reset is set to </font> <u><font face='arial' color='blue'>External Reset asserted</font></u><br><br><b><font face='Arial'>5. PLL0 fail</font></b><br><br><font face='arial'>Reset sequence is set to  </font> <u><font face='arial' color='blue'>trigger a reset sequence</font></u><br><font face='arial'>Alternate Request type set to </font> <u><font face='arial' color='blue'> generate a SAFE mode request event if the reset is disabled</font></u><br><font face='arial'>ShortSequence reset is set to </font> <u><font face='arial' color='blue'>Start From PHASE1 </font></u><br><font face='arial'>Bidirectional Reset is set to </font> <u><font face='arial' color='blue'>External Reset asserted</font></u><br><br><b><font face='Arial'>6. Core reset</font></b><br><br><font face='arial'>Reset sequence is set to  </font> <u><font face='arial' color='blue'>trigger a reset sequence</font></u><br><font face='arial'>Alternate Request type set to </font> <u><font face='arial' color='blue'> generate a SAFE mode request event if the reset is disabled</font></u><br><font face='arial'>ShortSequence reset is set to </font> <u><font face='arial' color='blue'>Start From PHASE1</font></u><br><font face='arial'>Bidirectional Reset is set to </font> <u><font face='arial' color='blue'>External Reset asserted</font></u><br><br><b><font face='Arial'>7.JTAG initiated reset</font></b><br><br><font face='arial'>Reset sequence is set to  </font> <u><font face='arial' color='blue'>trigger a reset sequence</font></u><br><font face='arial'>Alternate Request type set to </font> <u><font face='arial' color='blue'> generate a SAFE mode request event if the reset is disabled</font></u><br><font face='arial'>ShortSequence reset is set to </font> <u><font face='arial' color='blue'>Start From PHASE1 </font></u><br><font face='arial'>Bidirectional Reset is set to </font> <u><font face='arial' color='blue'>External Reset asserted</font></u><br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="8" bgcolor= "#CCFFCC"><b><center><h3></h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Modes</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Reset Sequence Enabled</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>SAFE mode Enabled</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>SAFE mode request Generated</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Interrupt request Generated</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Reset Sequence start from PHASE 1</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Reset Sequence will start from PHASE 3</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>RESET_B Sequence is asserted</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>LVD27</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>SWT</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>LVD12_PD1</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>LVD12_PD0</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+<TD ><font face='arial'>-</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>FLASH</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>LVD45</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>CMU0_FHL</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>CMU0_OLR</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>PLL0</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>CORE</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>JTAG</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+<TD ><font face='arial'>NO</font> </TD>
+<TD ><font face='arial'>YES</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_FERD</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_FERD.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Functional Event Reset Disable Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE4004 : 0x0004</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Functional Event Reset Disable Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_EXR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_FLASH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_LVD45</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_CMU0_FHL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_CMU0_OLR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_PLL0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_CHKSTOP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_SOFT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_CORE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_JTAG</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_DERD</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_DERD.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Destructive Event Reset Disable Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE4006 : 0x0006</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Destructive Event Reset Disable Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_LVD27</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_SWT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_LVD12_PD1</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>D_LVD12_PD0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This event triggers the reset sequence</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_FEAR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_FEAR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Functional Event Alternate Request Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE4010 : 0x0010</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Functional Event Alternate Request Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_EXR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_FLASH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_LVD45</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_CMU0_FHL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_CMU0_OLR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_PLL0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_CHKSTOP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_SOFT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_CORE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_JTAG</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_DEAR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_DEAR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Destructive Event Alternate Request Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE4012 : 0x0012</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Destructive Event Alternate Request Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_LVD27</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_SWT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_LVD12_PD1</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AR_LVD12_PD0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Generate SAFE Mode request to ME</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_FESS</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_FESS.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Functional Event Short Sequence</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE4018 : 0x0018</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Functional Event Short Sequence</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_EXR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_FLASH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_LVD45</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_CMU0_FHL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_CMU0_OLR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_PLL0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_CHKSTOP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_SOFT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_CORE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SS_JTAG</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reset sequence starts from  PHASE 1</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_FBRE</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_FBRE.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Functional Bidirectional Reset Enable</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE401C : 0x001C</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Functional Bidirectional Reset Enable</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_EXR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_FLASH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_LVD45</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_CMU0_FHL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_CMU0_OLR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_PLL0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_CHKSTOP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_SOFT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_CORE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BE_JTAG</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RESET is  Asserted</font> </TD>
+</TR>
+</TABLE>
+<br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>RGM_STDBY</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/RGM/RGM_STDBY.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>STANDBY0 Reset Sequence</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE401A : 0x001A</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>STANDBY0 Reset Sequence</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BOOT_FROM_BKP_RAM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Boot from flash on STANDBY0 exit</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+<br><br></font> </BODY></HTML>

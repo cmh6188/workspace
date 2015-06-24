@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;P35.Camera&apos;" deleteContents="false" description="Delete resource &apos;P35.Camera&apos;" element1="/P35.Camera" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1424764553513"/>&#x0A;<refactoring comment="Delete 5 resources" deleteContents="true" description="Delete 5 resources" element1="/P01.LedBlinking" element2="/P02.SystemClock" element3="/P03.Gpio" element4="/P04.DemoLedSwitch" element5="/P05.LedSwitchHW" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="5" stamp="1424764670085"/>
+</session>

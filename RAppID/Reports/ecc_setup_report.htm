@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for:  System Setup   </font></center></b> 
+<hr size='1' color='#3366FF'>
+<center><h3><font face='Arial'>ECC Configuration</font></h3></center>
+
+<TABLE  cellpadding='2' border='0' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD ><font face='arial'>RAM-ECC non-correcting error reporting is  </font> <u><font face='arial' color='blue'>disabled.</font></u><br><font face='arial'>Flash-ECC non-correcting error reporting is   </font> <u><font face='arial' color='blue'>disabled.</font></u><br><font face='arial'>RAM 1 bit Reporting is </font> <u><font face='arial' color='blue'>disabled.</font></u><br><font face='arial'>Flash 1 bit Reporting is </font> <u><font face='arial' color='blue'>disabled.</font></u><br><br></TD>
+</TR>
+</TABLE>
+<center><h3><font face='Arial'>ECC SRAM Initialization</font></h3></center>
+
+<TABLE  cellpadding='2' border='0' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD ><font face='arial'>Basic ECC SRAM initialization </font> <u><font face='arial' color='blue'>GPRs to SRAM.</font></u><br><br></TD>
+</TR>
+</TABLE>
+<font face='arial'><br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ECSM_ECR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ECSM/ECR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>ECC Configuration Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFF40043 : 0x43</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>ECC Configuration Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ER1BR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reporting of single-bit RAM corrections is Disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EF1BR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reporting of single-bit flash corrections is Disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4-5</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ERNCR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reporting of non correctable RAM bits error is Disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EFNCR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reporting of non correctable FLASH bits error is Disabled.</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

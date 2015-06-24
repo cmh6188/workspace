@@ -1,0 +1,5 @@
+MPC5606B_Single_Core_Imported_Executable/Training_LED_Example.elf
+Project_Settings/Debugger/MPC5606B_VLE.tcl
+Project_Settings/Debugger/MPC5606B.mem
+.settings/com.freescale.core.ide.newprojectwizard.prefs
+ReferencedRSESystems.xml

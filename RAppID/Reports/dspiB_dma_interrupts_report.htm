@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: DSPI_1  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><font face='arial'><b><font face='Arial'>DMA/Interrupts</font></b><br><br>Transmission complete requests are <u><font face='arial' color='blue'>disabled</font></u>. DSPI finished requests are <u><font face='arial' color='blue'>disabled</font></u>.Transmit FIFO fill request is <u><font face='arial' color='blue'>disabled</font></u> and it routed to <u><font face='arial' color='blue'>Interrupt</font></u>. Transmit FIFO underflow request is <u><font face='arial' color='blue'>disabled.</font></u><br>Receive FIFO drain request is <u><font face='arial' color='blue'>disabled</font></u> and it routed to <u><font face='arial' color='blue'>Interrupt</font></u>. Receive FIFO overflow request is <u><font face='arial' color='blue'>disabled.</font></u><br>Receive buffer size is <u><font face='arial' color='blue'>1</font></u> bytes.<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>DSPI1_RSER</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/DSPI/DSPIx_RSER.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>DSPI DMA/interrupt request select and enable register </font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFF94030 : 0x30</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>DSPI DMA/interrupt request select and enable register </font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>TCF_RE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>TCF interrupt requests are disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1-2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>EOQF_RE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>EOQF(DSPI Finished Request Enable)interrupt requests are Disable</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>TFUF_RE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Transmit FIFO underflow interrupt requests are  Disable</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>5</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>TFFF_RE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Transmit FIFO fill interrupt requests or DMA requests are  Disable</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>TFFF_DIRS</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Interrupt request is selected</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RFOF_RE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Receive FIFO overflow interrupt requests are Disable.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RFDF_RE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Receive FIFO drain interrupt requests or DMA requests are Disable.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RFDF_DIRS</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Interrupt request is selected.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

@@ -1,0 +1,303 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: FlexCAN_4  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<font face='arial'>Clock source for the CAN protocol interface (CPI) is selected to be </font> <u><font face='arial' color='blue'>Oscillator clock</font></u><font face='arial'> and FlexCAN System Clock is </font> <u><font face='arial' color='blue'>8</font></u><font face='arial'> MHz with the CAN Speed set to </font> <u><font face='arial' color='blue'>100K bits/s.</font></u><br><br><font face='arial'>The ratio between the CPI clock frequency and the serial clock (SCK) frequency is set to </font> <u><font face='arial' color='blue'>5</font></u><font face='arial'>.Hence the SCK is </font> <u><font face='arial' color='blue'>1.6</font></u><font face='arial'> MHz</font> <font face='arial'>.</font> <font face='arial'> The length of phase segment 1(PSEG1+1) is </font> <u><font face='arial' color='blue'>4bit time,</font></u><font face='arial'>that of phase segment 2(PSEG2+1) is </font> <u><font face='arial' color='blue'>4bit time,</font></u><font face='arial'>and that of propagation segment(PROPSEG+1) is </font> <u><font face='arial' color='blue'>7 bit time.</font></u><font face='arial'> CAN take</font> <u><font face='arial' color='blue'> one </font></u><font face='arial'>sample at a time.</font> <br><br><font face='arial'>S-clock frequency (SCK) = System Clock frequency / (Prescaler + 1) i.e.  SCK =</font> <u><font face='arial' color='blue'>8000000 / 5 = </font></u><u><font face='arial' color='blue'>1.6</font></u><font face='arial'> MHz</font> <br><br><font face='arial'>Hence one bit time (SYNC_SEG) = 1 / SCK = </font> <u><font face='arial' color='blue'> 1 /1.6 * 10^6</font></u><font face='arial'> = 0.625 microseconds</font> <br><br><font face='arial'>Phase Buffer Segment 1 = (PSEG1 + 1) * Time Quanta =</font> <u><font face='arial' color='blue'>4</font></u><font face='arial'>* 0.625microseconds = 2.5 microseconds</font> <br><br><font face='arial'>Phase Buffer Segment 2 = (PSEG2 + 1) * Time Quanta =</font> <u><font face='arial' color='blue'>4</font></u><font face='arial'>* 0.625microseconds = 2.5 microseconds</font> <br><br><font face='arial'>Propagation Segment Time = (PROPSEG + 1) * Time Quanta = </font> <u><font face='arial' color='blue'>7</font></u><font face='arial'>* 0.625microseconds = 4.375 microseconds</font> <br><br><font face='arial'>Nominal Bit time= SYNC_SEG + Propagation Segment Time + Phase Buffer Segment 1 + Phase Buffer Segment 2</font> <br><br><font face='arial'>Location of Sample Point is at the end of Phase Segment 1</font> <br><br><font face='arial'>Sample point  (%) = (SYNC_SEG + Propagation Segment Time + Phase Buffer Segment 1 ) / ( Nominal Bit Time) * 100</font> <font face='arial' color='blue'> = </font> <u><font face='arial' color='blue'>75</font></u><br><br><font face='arial'>Re-synchronization Jump Width = (RJW + 1) = </font> <u><font face='arial' color='blue'>1</font></u><font face='arial'> bit time</font> <br><br><font face='arial'>FlexCAN can have maximum of </font> <u><font face='arial' color='blue'>15</font></u><font face='arial'>   buffers.</font> <br><br><font face='arial'>Bus off recovery mode, </font> <font face='arial'>is </font> <u><font face='arial' color='blue'>enabled</font></u><br><br><font face='arial'>Timer sync mode, </font> <font face='arial'>Lower buffer transfer first, </font> <font face='arial'>Listen-only mode, </font> <font face='arial'>Loop Back mode, </font> <font face='arial'>is </font> <u><font face='arial' color='blue'>disabled</font></u><br><br><font face='arial'>backward compatibility configuration (BCC) is </font> <u><font face='arial' color='blue'>enabled, </font></u><font face='arial'>hence the FlexCAN uses </font> <u><font face='arial' color='blue'>RXGlobal Mask register, RX14 Mask register and RX15 Mask register</font></u><br><br><font face='arial'>Freeze Enable is </font> <u><font face='arial' color='blue'>enabled</font></u><font face='arial'> and </font> <font face='arial'>Halt FlexCAN is </font> <u><font face='arial' color='blue'>enabled</font></u><br><font face='arial'>SUPV bit configures some of the FlexCAN registers in </font> <u><font face='arial' color='blue'>Supervisor mode</font></u><font face='arial'> memory space.</font> <br><font face='arial'>Self Reception: </font> <u><font face='arial' color='blue'>Enabled</font></u><br><font face='arial'>TX abort </font> <u><font face='arial' color='blue'>disabled, </font></u><font face='arial'>. Local priority </font> <u><font face='arial' color='blue'>disabled, </font></u><br><font face='arial'>ID Acceptance mode:</font> <u><font face='arial' color='blue'>A</font></u><br><font face='arial'>FIFO Enable:</font> <u><font face='arial' color='blue'>FIFO is disabled i.e MBs 0 to 7 can be used for normal reception and transmission.</font></u><br><font face='arial'>Warning Interrupt Enable:</font> <u><font face='arial' color='blue'> Disabled</font></u><br><br><b><font face='Arial'>Register</font></b><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CAN_4_CR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/FLEXCAN/CANx_CR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Control register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFFD0004 : 0x10004</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x041B0006 : 0x041B0006</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Control register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PRESDIV</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000100</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Prescaler Divider Factor is 5. It defines the ratio between the S-clock Frequency and CPI clock Frequency</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RJW</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The maximum number of time quanta that a bit time can be changed by one re-synchronization is 1.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10-12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PSEG1</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>011</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The length of phase segment 1 (PSEG1+1) in the bit time is 4</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PSEG2</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>011</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The length of phase segment 2 (PSEG2+1) in the bit time is 4</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BOFFMSK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Bus off interrupt is disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ERRMSK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Error interrupt is disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CLK_SRC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The CAN engine clock source is the Oscillator.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LPB</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Loop back mode is disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>20</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>TWRNMSK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Tx Warning Interrupt disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>21</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RWRNMSK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Rx Warning Interrupt disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>22-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>One sample is used to determine the value of the received bit </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>25</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BOFFREC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Automatic recovering from bus off state is enabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>26</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>TSYN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Timer sync feature is disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>27</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LBUF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Buffer with highest priority  is transmitted first.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>28</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LOM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>FlexCAN module Listen Only Mode is disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>29-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PROPSEG</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>110</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The length of the propagation segment (PROPSEG+1) in the bit time 7.</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CAN_4_MCR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/FLEXCAN/CANx_MCR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Module configuration register </font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFFD0000 : 0x10000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0xD080000F : 0xD890000F</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Module configuration register </font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MDIS</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The FlexCAN module is disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FRZ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>enabled to enter freeze mode</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FEN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>FIFO is disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>HALT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Enters freeze mode if the FRZ bit is asserted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>NOTRDY</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This is read only bit so writting 0 in register but Reset value is 1</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>5</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SOFTRST</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>No reset request.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FRZACK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This is read only bit so writting 0 in register but it is always the opposite of MDIS Reset value.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SUPV</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>SUPV bit configures some of the FlexCAN registers in  Supervisor mode memory space.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>WRNEN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The generation of the TWRNINT and RWRNINT flags in the error and status register is disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LPM_ACK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This is read only bit so writting 0 in register but it is always the same of MDIS Reset value.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SRXDIS</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>FlexCAN can receive the frame transmited by itself.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BCC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The 64 Individual mask register is disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-17</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LPRIO_EN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Local Priority Enable is disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AEN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Abort Enable is disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>20-21</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>22-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IDAM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>ID Acceptance Mode is A</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-25</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>26-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MAXMB</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>001111</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Maximum number of message buffers of the FlexCAN module is 15.</font> </TD>
+</TR>
+</TABLE>
+</BODY></HTML>

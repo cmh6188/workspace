@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Default C source template" key="LastUsedSourceTemplate"/>
+	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="2" key="com.freescale.cdt.debug.cw.PN_SuppressDialog927dc758c805ca26e2dd28d96539ba1a20bcf5"/>
+		<item value="0" key="askReindex.detail"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="227191" key="searchFlags"/>
+		<item value="false" key="caseSensitive"/>
+		<list key="previousPatterns">
+			<item value="CAM_CLK"/>
+		</list>
+	</section>
+	<section name="SIMPLE_FLASH_DIALOG_SETTINGS_SECTION">
+		<item value="false" key="SIMPLE_FLASH_DIALOG_SETTINGS_SAVE_TARGET_TASK_OPTION"/>
+		<item value="0" key="SIMPLE_FLASH_DIALOG_SETTINGS_FILE_OFFSET"/>
+		<item value="false" key="SIMPLE_FLASH_DIALOG_SETTINGS_UNPROTECT_OPTION"/>
+		<item value="${workspace_loc:/P35.Camera/FLASH/NGV_DMU_BASE.mot}" key="SIMPLE_FLASH_DIALOG_SETTINGS_FILENAME"/>
+		<item value="MPC5606B" key="SIMPLE_FLASH_DIALOG_SETTINGS_PROCESSOR"/>
+		<item value="NGV_DMU_BASE_FLASH_OSJTAG" key="SIMPLE_FLASH_DIALOG_SETTINGS_SYSTEM"/>
+		<item value="0" key="SIMPLE_FLASH_DIALOG_SETTINGS_FLASH_CONFIGURATION_INDEX"/>
+		<item value="" key="SIMPLE_FLASH_FLASH_CONFIG_FOLDER"/>
+		<list key="QUICK_FLASH_DIALOG_SETTINGS_FLASH_CONFIGURATIONS">
+			<item value="C:\Freescale\CW MCU v10.6\MCU\bin\plugins\support\TargetTask\Flash_Programmer\E200\MPC5606B_INTFLASH.xml"/>
+			<item value="C:\Freescale\CW MCU v10.6\MCU\bin\plugins\support\TargetTask\Flash_Programmer\E200\MPC5606B_SHADOW_INTFLASH.xml"/>
+			<item value="C:\Freescale\CW MCU v10.6\MCU\bin\plugins\support\TargetTask\Flash_Programmer\E200\MPC5606B_TEST_AREAS_INTFLASH.xml"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+</section>

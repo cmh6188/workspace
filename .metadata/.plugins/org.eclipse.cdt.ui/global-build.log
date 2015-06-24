@@ -1,0 +1,774 @@
+
+**** Build of configuration FLASH for project P10.BaseTimer ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Build of configuration FLASH for project P10.BaseTimer ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Build of configuration FLASH for project P10-1.IsrProblem ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Build of configuration FLASH for project P10-1.IsrProblem ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Executing target #21 ../Sources/main.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+'Finished building: ../Sources/main.c'
+' '
+'Building target: NGV_DMU.elf'
+'Executing target #38 NGV_DMU.elf'
+'Invoking: PowerPC Linker'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwldeppc" -o "NGV_DMU.elf" @@"NGV_DMU.args"  
+'Finished building target: NGV_DMU.elf'
+' '
+
+**** Build of configuration FLASH for project P10-1.IsrProblem ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Clean-only build of configuration FLASH for project P14.SerialDebug ****
+Build complete for project P14.SerialDebug
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/Exceptions.c'
+'Building file: ../Sources/IntcInterrupts.c'
+'Building file: ../Sources/adc_init.c'
+'Building file: ../Sources/adc_trigger_init.c'
+'Building file: ../Sources/basetimer.c'
+'Building file: ../Sources/cansp_init.c'
+'Building file: ../Sources/demoled.c'
+'Building file: ../Sources/demoswitch.c'
+'Executing target #1 ../Sources/Exceptions.c'
+'Executing target #2 ../Sources/IntcInterrupts.c'
+'Executing target #3 ../Sources/adc_init.c'
+'Executing target #4 ../Sources/adc_trigger_init.c'
+'Executing target #5 ../Sources/basetimer.c'
+'Executing target #6 ../Sources/cansp_init.c'
+'Executing target #7 ../Sources/demoled.c'
+'Executing target #8 ../Sources/demoswitch.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/Exceptions.args" -o "Sources/Exceptions_c.obj" "../Sources/Exceptions.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/IntcInterrupts.args" -o "Sources/IntcInterrupts_c.obj" "../Sources/IntcInterrupts.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/adc_init.args" -o "Sources/adc_init_c.obj" "../Sources/adc_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/adc_trigger_init.args" -o "Sources/adc_trigger_init_c.obj" "../Sources/adc_trigger_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/basetimer.args" -o "Sources/basetimer_c.obj" "../Sources/basetimer.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/cansp_init.args" -o "Sources/cansp_init_c.obj" "../Sources/cansp_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/demoled.args" -o "Sources/demoled_c.obj" "../Sources/demoled.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/demoswitch.args" -o "Sources/demoswitch_c.obj" "../Sources/demoswitch.c" -MD -gccdep
+'Finished building: ../Sources/Exceptions.c'
+' '
+'Finished building: ../Sources/adc_init.c'
+'Finished building: ../Sources/adc_trigger_init.c'
+'Finished building: ../Sources/cansp_init.c'
+'Building file: ../Sources/dspi_init.c'
+'Finished building: ../Sources/IntcInterrupts.c'
+'Finished building: ../Sources/basetimer.c'
+'Finished building: ../Sources/demoled.c'
+'Finished building: ../Sources/demoswitch.c'
+' '
+' '
+' '
+'Executing target #9 ../Sources/dspi_init.c'
+' '
+' '
+' '
+' '
+'Building file: ../Sources/dspi_var.c'
+'Building file: ../Sources/edma_init.c'
+'Building file: ../Sources/emios_init.c'
+'Invoking: PowerPC Compiler'
+'Building file: ../Sources/flash_init.c'
+'Building file: ../Sources/flexcan_init.c'
+'Building file: ../Sources/i2c_init.c'
+'Building file: ../Sources/i2c_util.c'
+'Executing target #10 ../Sources/dspi_var.c'
+'Executing target #11 ../Sources/edma_init.c'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/dspi_init.args" -o "Sources/dspi_init_c.obj" "../Sources/dspi_init.c" -MD -gccdep
+'Executing target #12 ../Sources/emios_init.c'
+'Executing target #13 ../Sources/flash_init.c'
+'Executing target #14 ../Sources/flexcan_init.c'
+'Executing target #15 ../Sources/i2c_init.c'
+'Executing target #16 ../Sources/i2c_util.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/dspi_var.args" -o "Sources/dspi_var_c.obj" "../Sources/dspi_var.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/edma_init.args" -o "Sources/edma_init_c.obj" "../Sources/edma_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/emios_init.args" -o "Sources/emios_init_c.obj" "../Sources/emios_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/flash_init.args" -o "Sources/flash_init_c.obj" "../Sources/flash_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/flexcan_init.args" -o "Sources/flexcan_init_c.obj" "../Sources/flexcan_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/i2c_init.args" -o "Sources/i2c_init_c.obj" "../Sources/i2c_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/i2c_util.args" -o "Sources/i2c_util_c.obj" "../Sources/i2c_util.c" -MD -gccdep
+'Finished building: ../Sources/dspi_init.c'
+' '
+'Building file: ../Sources/intc_init.c'
+'Executing target #17 ../Sources/intc_init.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/intc_init.args" -o "Sources/intc_init_c.obj" "../Sources/intc_init.c" -MD -gccdep
+'Finished building: ../Sources/edma_init.c'
+'Finished building: ../Sources/i2c_util.c'
+'Finished building: ../Sources/flash_init.c'
+' '
+'Finished building: ../Sources/i2c_init.c'
+' '
+' '
+'Building file: ../Sources/ivor_branch_table.c'
+' '
+'Building file: ../Sources/linflex_var.c'
+'Building file: ../Sources/linflex_init.c'
+'Executing target #18 ../Sources/ivor_branch_table.c'
+'Building file: ../Sources/main.c'
+'Executing target #20 ../Sources/linflex_var.c'
+'Executing target #19 ../Sources/linflex_init.c'
+'Executing target #21 ../Sources/main.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Finished building: ../Sources/dspi_var.c'
+'Finished building: ../Sources/flexcan_init.c'
+'Finished building: ../Sources/emios_init.c'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/ivor_branch_table.args" -o "Sources/ivor_branch_table_c.obj" "../Sources/ivor_branch_table.c" -MD -gccdep
+'Finished building: ../Sources/intc_init.c'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/linflex_var.args" -o "Sources/linflex_var_c.obj" "../Sources/linflex_var.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/linflex_init.args" -o "Sources/linflex_init_c.obj" "../Sources/linflex_init.c" -MD -gccdep
+' '
+' '
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+' '
+' '
+'Building file: ../Sources/mpu_init.c'
+'Building file: ../Sources/msr_init.c'
+'Building file: ../Sources/pit_init.c'
+'Building file: ../Sources/pcu_init.c'
+'Executing target #22 ../Sources/mpu_init.c'
+'Executing target #23 ../Sources/msr_init.c'
+'Executing target #24 ../Sources/pcu_init.c'
+'Executing target #25 ../Sources/pit_init.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/mpu_init.args" -o "Sources/mpu_init_c.obj" "../Sources/mpu_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/pit_init.args" -o "Sources/pit_init_c.obj" "../Sources/pit_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/pcu_init.args" -o "Sources/pcu_init_c.obj" "../Sources/pcu_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/msr_init.args" -o "Sources/msr_init_c.obj" "../Sources/msr_init.c" -MD -gccdep
+'Finished building: ../Sources/linflex_var.c'
+' '
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|89|5|3|1568|3)
+= for(int i=1; i<=9; i++){ 
+>expression syntax error
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|89|20|1|1583|1)
+= for(int i=1; i<=9; i++){ 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|90|31|1|1620|1)
+=  SDBG_Printf("%d X %d = %d",9,i,9*i); 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|95|0|4|1638|4)
+=void Callback_g(char* str) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|100|5|3|1713|3)
+= for(int i=1; i<=9; i++){ 
+>expression syntax error
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|100|20|1|1728|1)
+= for(int i=1; i<=9; i++){ 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|101|33|1|1767|1)
+=  SDBG_Printf("%d X %d = %d",dan,i,dan*i); 
+>undefined identifier 'i'
+'Building file: ../Sources/rappid_utils.c'
+'Finished building: ../Sources/linflex_init.c'
+'Finished building: ../Sources/ivor_branch_table.c'
+' '
+'Executing target #26 ../Sources/rappid_utils.c'
+' '
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rappid_utils.args" -o "Sources/rappid_utils_c.obj" "../Sources/rappid_utils.c" -MD -gccdep
+'Finished building: ../Sources/pcu_init.c'
+' '
+'Finished building: ../Sources/mpu_init.c'
+'Finished building: ../Sources/msr_init.c'
+' '
+' '
+'Finished building: ../Sources/pit_init.c'
+' '
+'Finished building: ../Sources/rappid_utils.c'
+' '
+
+Errors caused tool to abort.
+mingw32-make: *** [Sources/main_c.obj] Error 1
+mingw32-make: *** Waiting for unfinished jobs....
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Building file: ../Sources/rchw_init.c'
+'Building file: ../Sources/rgm_init.c'
+'Building file: ../Sources/romcopy.c'
+'Building file: ../Sources/rtc_init.c'
+'Building file: ../Sources/serialdebug.c'
+'Building file: ../Sources/siu_init.c'
+'Building file: ../Sources/stm_init.c'
+'Executing target #21 ../Sources/main.c'
+'Executing target #27 ../Sources/rchw_init.c'
+'Executing target #28 ../Sources/rgm_init.c'
+'Executing target #29 ../Sources/romcopy.c'
+'Executing target #30 ../Sources/rtc_init.c'
+'Executing target #31 ../Sources/serialdebug.c'
+'Executing target #32 ../Sources/siu_init.c'
+'Executing target #33 ../Sources/stm_init.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rchw_init.args" -o "Sources/rchw_init_c.obj" "../Sources/rchw_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rgm_init.args" -o "Sources/rgm_init_c.obj" "../Sources/rgm_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/romcopy.args" -o "Sources/romcopy_c.obj" "../Sources/romcopy.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rtc_init.args" -o "Sources/rtc_init_c.obj" "../Sources/rtc_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/serialdebug.args" -o "Sources/serialdebug_c.obj" "../Sources/serialdebug.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/siu_init.args" -o "Sources/siu_init_c.obj" "../Sources/siu_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/stm_init.args" -o "Sources/stm_init_c.obj" "../Sources/stm_init.c" -MD -gccdep
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|89|5|3|1568|3)
+= for(int i=1; i<=9; i++){ 
+>expression syntax error
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|89|20|1|1583|1)
+= for(int i=1; i<=9; i++){ 
+>undefined identifier 'i'
+'Finished building: ../Sources/serialdebug.c'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|90|31|1|1620|1)
+=  SDBG_Printf("%d X %d = %d",9,i,9*i); 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|95|0|4|1638|4)
+=void Callback_g(char* str) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|100|5|1|1713|1)
+= for(i=1; i<=9; i++){ 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|100|10|1|1718|1)
+= for(i=1; i<=9; i++){ 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|100|16|1|1724|1)
+= for(i=1; i<=9; i++){ 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|101|33|1|1763|1)
+=  SDBG_Printf("%d X %d = %d",dan,i,dan*i); 
+>undefined identifier 'i'
+'Finished building: ../Sources/stm_init.c'
+'Finished building: ../Sources/rchw_init.c'
+'Finished building: ../Sources/rgm_init.c'
+' '
+' '
+' '
+' '
+'Finished building: ../Sources/siu_init.c'
+'Finished building: ../Sources/romcopy.c'
+'Finished building: ../Sources/rtc_init.c'
+' '
+' '
+' '
+
+Errors caused tool to abort.
+mingw32-make: *** [Sources/main_c.obj] Error 1
+mingw32-make: *** Waiting for unfinished jobs....
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Building file: ../Sources/swt_init.c'
+'Building file: ../Sources/sys_init.c'
+'Building file: ../Sources/sysclk_init.c'
+'Building file: ../Project_Settings/Startup_Code/MPC5606B_HWInit.c'
+'Building file: ../Project_Settings/Startup_Code/MPC5606B_Startup.c'
+'Building file: ../Project_Settings/Startup_Code/MPC5606B_init_flash.c'
+'Building file: ../Project_Settings/Startup_Code/__ppc_eabi_init.c'
+'Executing target #21 ../Sources/main.c'
+'Executing target #34 ../Sources/swt_init.c'
+'Executing target #35 ../Sources/sys_init.c'
+'Executing target #36 ../Sources/sysclk_init.c'
+'Executing target #37 ../Project_Settings/Startup_Code/MPC5606B_HWInit.c'
+'Executing target #38 ../Project_Settings/Startup_Code/MPC5606B_Startup.c'
+'Executing target #39 ../Project_Settings/Startup_Code/MPC5606B_init_flash.c'
+'Executing target #40 ../Project_Settings/Startup_Code/__ppc_eabi_init.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/swt_init.args" -o "Sources/swt_init_c.obj" "../Sources/swt_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/sys_init.args" -o "Sources/sys_init_c.obj" "../Sources/sys_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/sysclk_init.args" -o "Sources/sysclk_init_c.obj" "../Sources/sysclk_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/MPC5606B_HWInit.args" -o "Project_Settings/Startup_Code/MPC5606B_HWInit_c.obj" "../Project_Settings/Startup_Code/MPC5606B_HWInit.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/MPC5606B_Startup.args" -o "Project_Settings/Startup_Code/MPC5606B_Startup_c.obj" "../Project_Settings/Startup_Code/MPC5606B_Startup.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/MPC5606B_init_flash.args" -o "Project_Settings/Startup_Code/MPC5606B_init_flash_c.obj" "../Project_Settings/Startup_Code/MPC5606B_init_flash.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/__ppc_eabi_init.args" -o "Project_Settings/Startup_Code/__ppc_eabi_init_c.obj" "../Project_Settings/Startup_Code/__ppc_eabi_init.c" -MD -gccdep
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|89|5|3|1568|3)
+= for(int i=1; i<=9; i++){ 
+>expression syntax error
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|89|20|1|1583|1)
+= for(int i=1; i<=9; i++){ 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|90|31|1|1620|1)
+=  SDBG_Printf("%d X %d = %d",9,i,9*i); 
+>undefined identifier 'i'
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|95|0|4|1638|4)
+=void Callback_g(char* str) 
+>function has no prototype
+'Finished building: ../Project_Settings/Startup_Code/MPC5606B_Startup.c'
+'Finished building: ../Project_Settings/Startup_Code/MPC5606B_init_flash.c'
+'Finished building: ../Project_Settings/Startup_Code/__ppc_eabi_init.c'
+'Finished building: ../Sources/sys_init.c'
+'Finished building: ../Sources/sysclk_init.c'
+' '
+'Finished building: ../Project_Settings/Startup_Code/MPC5606B_HWInit.c'
+' '
+' '
+'Finished building: ../Sources/swt_init.c'
+' '
+' '
+' '
+' '
+
+Errors caused tool to abort.
+mingw32-make: *** [Sources/main_c.obj] Error 1
+mingw32-make: *** Waiting for unfinished jobs....
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Executing target #21 ../Sources/main.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Error
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|90|5|3|1581|3)
+= for(int i=1; i<=9; i++){ 
+>expression syntax error
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|96|0|4|1651|4)
+=void Callback_g(char* str) 
+>function has no prototype
+
+Errors caused tool to abort.
+mingw32-make: *** [Sources/main_c.obj] Error 1
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Executing target #21 ../Sources/main.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|96|0|4|1647|4)
+=void Callback_g(char* str) 
+>function has no prototype
+'Finished building: ../Sources/main.c'
+' '
+'Building target: NGV_DMU_BASE.elf'
+'Executing target #41 NGV_DMU_BASE.elf'
+'Invoking: PowerPC Linker'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwldeppc" -o "NGV_DMU_BASE.elf" @@"NGV_DMU_BASE.args"  
+'Finished building target: NGV_DMU_BASE.elf'
+' '
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Executing target #21 ../Sources/main.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|96|0|4|1649|4)
+=void Callback_g(char* str) 
+>function has no prototype
+'Finished building: ../Sources/main.c'
+' '
+'Building target: NGV_DMU_BASE.elf'
+'Executing target #41 NGV_DMU_BASE.elf'
+'Invoking: PowerPC Linker'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwldeppc" -o "NGV_DMU_BASE.elf" @@"NGV_DMU_BASE.args"  
+'Finished building target: NGV_DMU_BASE.elf'
+' '
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/main.c'
+'Executing target #21 ../Sources/main.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|87|0|4|1539|4)
+=void Callback_G(void) 
+>function has no prototype
+C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc|Compiler|Warning
+(C:\Freescale\workspace\P14.SerialDebug\Sources\main.c|98|0|4|1680|4)
+=void Callback_g(char* str) 
+>function has no prototype
+'Finished building: ../Sources/main.c'
+' '
+'Building target: NGV_DMU_BASE.elf'
+'Executing target #41 NGV_DMU_BASE.elf'
+'Invoking: PowerPC Linker'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwldeppc" -o "NGV_DMU_BASE.elf" @@"NGV_DMU_BASE.args"  
+'Finished building target: NGV_DMU_BASE.elf'
+' '
+
+**** Build of configuration FLASH for project P14.SerialDebug ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.
+
+**** Build of configuration FLASH for project P16.MyUart ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+'Building file: ../Sources/Exceptions.c'
+'Building file: ../Sources/IntcInterrupts.c'
+'Building file: ../Sources/adc_init.c'
+'Building file: ../Sources/adc_trigger_init.c'
+'Building file: ../Sources/basetimer.c'
+'Building file: ../Sources/cansp_init.c'
+'Building file: ../Sources/demoled.c'
+'Building file: ../Sources/demoswitch.c'
+'Executing target #1 ../Sources/Exceptions.c'
+'Executing target #2 ../Sources/IntcInterrupts.c'
+'Executing target #3 ../Sources/adc_init.c'
+'Executing target #4 ../Sources/adc_trigger_init.c'
+'Executing target #5 ../Sources/basetimer.c'
+'Executing target #6 ../Sources/cansp_init.c'
+'Executing target #7 ../Sources/demoled.c'
+'Executing target #8 ../Sources/demoswitch.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/Exceptions.args" -o "Sources/Exceptions_c.obj" "../Sources/Exceptions.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/IntcInterrupts.args" -o "Sources/IntcInterrupts_c.obj" "../Sources/IntcInterrupts.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/adc_init.args" -o "Sources/adc_init_c.obj" "../Sources/adc_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/adc_trigger_init.args" -o "Sources/adc_trigger_init_c.obj" "../Sources/adc_trigger_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/basetimer.args" -o "Sources/basetimer_c.obj" "../Sources/basetimer.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/cansp_init.args" -o "Sources/cansp_init_c.obj" "../Sources/cansp_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/demoled.args" -o "Sources/demoled_c.obj" "../Sources/demoled.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/demoswitch.args" -o "Sources/demoswitch_c.obj" "../Sources/demoswitch.c" -MD -gccdep
+'Finished building: ../Sources/Exceptions.c'
+'Finished building: ../Sources/adc_init.c'
+'Finished building: ../Sources/adc_trigger_init.c'
+'Finished building: ../Sources/basetimer.c'
+'Finished building: ../Sources/cansp_init.c'
+'Finished building: ../Sources/IntcInterrupts.c'
+'Finished building: ../Sources/demoswitch.c'
+'Finished building: ../Sources/demoled.c'
+' '
+' '
+' '
+' '
+' '
+' '
+' '
+' '
+'Building file: ../Sources/dspi_init.c'
+'Building file: ../Sources/dspi_var.c'
+'Building file: ../Sources/edma_init.c'
+'Building file: ../Sources/emios_init.c'
+'Building file: ../Sources/flash_init.c'
+'Building file: ../Sources/flexcan_init.c'
+'Building file: ../Sources/i2c_init.c'
+'Building file: ../Sources/i2c_util.c'
+'Executing target #9 ../Sources/dspi_init.c'
+'Executing target #10 ../Sources/dspi_var.c'
+'Executing target #11 ../Sources/edma_init.c'
+'Executing target #12 ../Sources/emios_init.c'
+'Executing target #13 ../Sources/flash_init.c'
+'Executing target #14 ../Sources/flexcan_init.c'
+'Executing target #15 ../Sources/i2c_init.c'
+'Executing target #16 ../Sources/i2c_util.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/dspi_init.args" -o "Sources/dspi_init_c.obj" "../Sources/dspi_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/dspi_var.args" -o "Sources/dspi_var_c.obj" "../Sources/dspi_var.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/edma_init.args" -o "Sources/edma_init_c.obj" "../Sources/edma_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/emios_init.args" -o "Sources/emios_init_c.obj" "../Sources/emios_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/flash_init.args" -o "Sources/flash_init_c.obj" "../Sources/flash_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/flexcan_init.args" -o "Sources/flexcan_init_c.obj" "../Sources/flexcan_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/i2c_init.args" -o "Sources/i2c_init_c.obj" "../Sources/i2c_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/i2c_util.args" -o "Sources/i2c_util_c.obj" "../Sources/i2c_util.c" -MD -gccdep
+'Finished building: ../Sources/edma_init.c'
+'Finished building: ../Sources/flash_init.c'
+'Finished building: ../Sources/dspi_var.c'
+'Finished building: ../Sources/flexcan_init.c'
+'Finished building: ../Sources/dspi_init.c'
+'Finished building: ../Sources/emios_init.c'
+'Finished building: ../Sources/i2c_init.c'
+'Finished building: ../Sources/i2c_util.c'
+' '
+' '
+' '
+' '
+' '
+' '
+' '
+' '
+'Building file: ../Sources/intc_init.c'
+'Building file: ../Sources/ivor_branch_table.c'
+'Building file: ../Sources/linflex_init.c'
+'Building file: ../Sources/linflex_var.c'
+'Building file: ../Sources/main.c'
+'Building file: ../Sources/mpu_init.c'
+'Building file: ../Sources/msr_init.c'
+'Building file: ../Sources/myuart.c'
+'Executing target #17 ../Sources/intc_init.c'
+'Executing target #18 ../Sources/ivor_branch_table.c'
+'Executing target #19 ../Sources/linflex_init.c'
+'Executing target #20 ../Sources/linflex_var.c'
+'Executing target #21 ../Sources/main.c'
+'Executing target #22 ../Sources/mpu_init.c'
+'Executing target #23 ../Sources/msr_init.c'
+'Executing target #24 ../Sources/myuart.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/intc_init.args" -o "Sources/intc_init_c.obj" "../Sources/intc_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/ivor_branch_table.args" -o "Sources/ivor_branch_table_c.obj" "../Sources/ivor_branch_table.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/linflex_init.args" -o "Sources/linflex_init_c.obj" "../Sources/linflex_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/linflex_var.args" -o "Sources/linflex_var_c.obj" "../Sources/linflex_var.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/main.args" -o "Sources/main_c.obj" "../Sources/main.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/mpu_init.args" -o "Sources/mpu_init_c.obj" "../Sources/mpu_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/msr_init.args" -o "Sources/msr_init_c.obj" "../Sources/msr_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/myuart.args" -o "Sources/myuart_c.obj" "../Sources/myuart.c" -MD -gccdep
+'Finished building: ../Sources/ivor_branch_table.c'
+'Finished building: ../Sources/intc_init.c'
+' '
+'Finished building: ../Sources/msr_init.c'
+'Finished building: ../Sources/linflex_init.c'
+'Finished building: ../Sources/main.c'
+'Finished building: ../Sources/linflex_var.c'
+'Finished building: ../Sources/mpu_init.c'
+' '
+'Finished building: ../Sources/myuart.c'
+' '
+'Building file: ../Sources/pcu_init.c'
+' '
+' '
+' '
+' '
+'Building file: ../Sources/pit_init.c'
+' '
+'Building file: ../Sources/rappid_utils.c'
+'Executing target #25 ../Sources/pcu_init.c'
+'Building file: ../Sources/rchw_init.c'
+'Building file: ../Sources/rgm_init.c'
+'Building file: ../Sources/romcopy.c'
+'Building file: ../Sources/rtc_init.c'
+'Executing target #26 ../Sources/pit_init.c'
+'Building file: ../Sources/serialdebug.c'
+'Executing target #27 ../Sources/rappid_utils.c'
+'Invoking: PowerPC Compiler'
+'Executing target #28 ../Sources/rchw_init.c'
+'Executing target #29 ../Sources/rgm_init.c'
+'Executing target #30 ../Sources/romcopy.c'
+'Executing target #31 ../Sources/rtc_init.c'
+'Invoking: PowerPC Compiler'
+'Executing target #32 ../Sources/serialdebug.c'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/pcu_init.args" -o "Sources/pcu_init_c.obj" "../Sources/pcu_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/pit_init.args" -o "Sources/pit_init_c.obj" "../Sources/pit_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rappid_utils.args" -o "Sources/rappid_utils_c.obj" "../Sources/rappid_utils.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rchw_init.args" -o "Sources/rchw_init_c.obj" "../Sources/rchw_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rgm_init.args" -o "Sources/rgm_init_c.obj" "../Sources/rgm_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/romcopy.args" -o "Sources/romcopy_c.obj" "../Sources/romcopy.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/rtc_init.args" -o "Sources/rtc_init_c.obj" "../Sources/rtc_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/serialdebug.args" -o "Sources/serialdebug_c.obj" "../Sources/serialdebug.c" -MD -gccdep
+'Finished building: ../Sources/pcu_init.c'
+'Finished building: ../Sources/rappid_utils.c'
+' '
+'Finished building: ../Sources/rgm_init.c'
+'Finished building: ../Sources/pit_init.c'
+'Finished building: ../Sources/rtc_init.c'
+' '
+'Finished building: ../Sources/rchw_init.c'
+'Finished building: ../Sources/romcopy.c'
+'Building file: ../Sources/siu_init.c'
+' '
+' '
+'Finished building: ../Sources/serialdebug.c'
+' '
+'Building file: ../Sources/stm_init.c'
+' '
+' '
+'Executing target #33 ../Sources/siu_init.c'
+'Building file: ../Sources/swt_init.c'
+'Building file: ../Sources/sys_init.c'
+' '
+'Building file: ../Sources/sysclk_init.c'
+'Executing target #34 ../Sources/stm_init.c'
+'Building file: ../Sources/youruart.c'
+'Building file: ../Project_Settings/Startup_Code/MPC5606B_HWInit.c'
+'Invoking: PowerPC Compiler'
+'Executing target #35 ../Sources/swt_init.c'
+'Executing target #36 ../Sources/sys_init.c'
+'Building file: ../Project_Settings/Startup_Code/MPC5606B_Startup.c'
+'Executing target #37 ../Sources/sysclk_init.c'
+'Invoking: PowerPC Compiler'
+'Executing target #38 ../Sources/youruart.c'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/siu_init.args" -o "Sources/siu_init_c.obj" "../Sources/siu_init.c" -MD -gccdep
+'Executing target #39 ../Project_Settings/Startup_Code/MPC5606B_HWInit.c'
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+'Executing target #40 ../Project_Settings/Startup_Code/MPC5606B_Startup.c'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/stm_init.args" -o "Sources/stm_init_c.obj" "../Sources/stm_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/swt_init.args" -o "Sources/swt_init_c.obj" "../Sources/swt_init.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/sys_init.args" -o "Sources/sys_init_c.obj" "../Sources/sys_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/sysclk_init.args" -o "Sources/sysclk_init_c.obj" "../Sources/sysclk_init.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Sources/youruart.args" -o "Sources/youruart_c.obj" "../Sources/youruart.c" -MD -gccdep
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/MPC5606B_HWInit.args" -o "Project_Settings/Startup_Code/MPC5606B_HWInit_c.obj" "../Project_Settings/Startup_Code/MPC5606B_HWInit.c" -MD -gccdep
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/MPC5606B_Startup.args" -o "Project_Settings/Startup_Code/MPC5606B_Startup_c.obj" "../Project_Settings/Startup_Code/MPC5606B_Startup.c" -MD -gccdep
+'Finished building: ../Sources/siu_init.c'
+' '
+'Finished building: ../Sources/swt_init.c'
+'Finished building: ../Sources/sysclk_init.c'
+'Finished building: ../Project_Settings/Startup_Code/MPC5606B_HWInit.c'
+'Finished building: ../Sources/youruart.c'
+'Finished building: ../Sources/stm_init.c'
+'Finished building: ../Sources/sys_init.c'
+'Finished building: ../Project_Settings/Startup_Code/MPC5606B_Startup.c'
+'Building file: ../Project_Settings/Startup_Code/MPC5606B_init_flash.c'
+' '
+' '
+' '
+' '
+' '
+' '
+' '
+'Executing target #41 ../Project_Settings/Startup_Code/MPC5606B_init_flash.c'
+'Building file: ../Project_Settings/Startup_Code/__ppc_eabi_init.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/MPC5606B_init_flash.args" -o "Project_Settings/Startup_Code/MPC5606B_init_flash_c.obj" "../Project_Settings/Startup_Code/MPC5606B_init_flash.c" -MD -gccdep
+'Executing target #42 ../Project_Settings/Startup_Code/__ppc_eabi_init.c'
+'Invoking: PowerPC Compiler'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwcceppc" @@"Project_Settings/Startup_Code/__ppc_eabi_init.args" -o "Project_Settings/Startup_Code/__ppc_eabi_init_c.obj" "../Project_Settings/Startup_Code/__ppc_eabi_init.c" -MD -gccdep
+'Finished building: ../Project_Settings/Startup_Code/MPC5606B_init_flash.c'
+' '
+'Finished building: ../Project_Settings/Startup_Code/__ppc_eabi_init.c'
+' '
+'Building target: NGV_DMU_BASE.elf'
+'Executing target #43 NGV_DMU_BASE.elf'
+'Invoking: PowerPC Linker'
+"C:/Freescale/CW MCU v10.6/MCU/PA_Tools/Command_Line_Tools/mwldeppc" -o "NGV_DMU_BASE.elf" @@"NGV_DMU_BASE.args"  
+'Finished building target: NGV_DMU_BASE.elf'
+' '
+
+**** Build of configuration FLASH for project P16.MyUart ****
+
+"C:\\Freescale\\CW MCU v10.6\\gnu\\bin\\mingw32-make" -j8 all 
+mingw32-make: Nothing to be done for `all'.

@@ -1,0 +1,211 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: Initialization Technique  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<caption><center><b><font face='arial'><h3><font face='Arial'>System Main Initialization </font></h3></font></b></center></caption> <br><TABLE  cellpadding='2' border='0' bordercolor='#000000' bgcolor= '#CCFFCC' width='100%' align = 'center' >
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><center><input type='image' SRC='Images/system_Initialization_560B.jpg'></center></TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='99%' align = 'center' >
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>System Initialization (e200z0 Core)</font></b><br>-Interrupt Controller (INTC) Initialization<br>-Reset Generation Module (RGM) Initialization<br>-Software Watchdog (SWT) Initialization<br>-Main Status Register (MSR) Initialization<br>-System Clock, Mode Entry (ME) & CMU Initialization<br>-Real Time Clock (RTC) Initialization<br>-System Timer Module (STM) Initialization<br>-Periodic Interrupt Timer (PIT) Initialization<br>-Flash Bus Interface Unit (BIU) Initialization<br>-Memory Protection Unit (MPU) Initialization<br>-Enhanced Direct Memory Access (eDMA) Initialization<br>-FlexCAN Initialization<br>-CAN Sampler Initialization<br>-Analog to Digital Converter (ADC) Initialization<br>-Enhanced Modular I/O (eMIOS) Initialization<br>-Deserial Serial Peripheral Interface (DSPI) Initialization<br>-Inter-Integrated Circuit Bus (I2C) Initialization<br>-LINFlex Initialization<br>-Mode Entry Post Configuration Initialization<br>-System Integration Unit (SIU) Initialization<br></font> </TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+<br><br><caption><center><b><font face='arial'><h3><font face='Arial'>Peripheral Initialization </font></h3></font></b></center></caption> <br><TABLE  cellpadding='2' border='0' bordercolor='#000000' bgcolor= '#CCFFCC' width='100%' align = 'center' >
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>ECC</font></b><br><font face='arial' color='#000000'><i>-     Initialization of RAM to GPR values or User Specified Value<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>INTC</font></b><br><font face='arial' color='#000000'><i>-	Module Configuration Register<br>-	Interrupt Acknowledge Register<br>-	Priority Set Register(s)<br>-	Initialize IRQ Vectors (table, address)<br>-	Per Interrupt Source Handler<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>RGM</font></b><br><font face='arial' color='#000000'><i>-    Clear reset flags<br>-    Configure RGM registers: RGM_FEAR,RGM_DEAR,RGM_FESS, RGM_STDBY, RGM_FBRE<br>-    Enable / Disable reset source: RGM_FERD,RGM_DERD<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>Software Watchdog Timer (SWT)</font></b><br><font face='arial' color='#000000'><i>-    Disable Watchdog Timer<br>-    Load Watchdog Timeout registers<br>-    Load Window Period register<br>-    Load Watchdog Configuration<br>-    Enable Watchdog<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>MSR</font></b><br><font face='arial' color='#000000'><i>-    Configure Following registers<br>-	MSR Register<br>-	HID0  Register<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>System Clock & Mode Entry</font></b><br><font face='arial' color='#000000'><i>-	Initialize Mode Enable and Mode Configuration registers<br>-	Initialize all the peripherals to operate in the DRUN mode<br>-	Initialize Mode Entry Peripheral Configuration registers<br>-	Mode Entry Interrupt setup<br>-	Enable all Clock sources and Peripheral Dividers in DRUN<br>-    Initialize the system clock mode<br>-    Configure the System Output clock setup<br>-    Configure Low Power Clocks<br>-    Initialize the CMU module<br>-    Initialize all the peripherals in the system<br>-    Post Configure the Mode Entry Peripheral Configuration registers with user settings.<br>-    Make a DRUN re-entry<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>Clock Monitoring Unit (CMU)</font></b><br><font face='arial' color='#000000'><i>-    Configure IRC Measurement duration for calibrating the internal & external oscillators<br>-    Set High & Low Reference frequencies for monitoring FMPLL output<br>-    Configure the RC oscillator to be calibrated, IRC Division factor for monitoring XOSC.<br>-    Enable the CMU module.<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>PCU</font></b><br><font face='arial' color='#000000'><i>-    Load Power Domain Configuration #2 register<br><b><font face='Arial'>-    Note: - This function is provided as an option. The user need to added this function manually in sys_init_fnc() function, after sysclk_module_init_fnc().</font></b><br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>RTC</font></b><br><font face='arial' color='#000000'><i>-    Disable the Real Time Counter <br>-    Configure the RTC Interrupt, RTC Compare value,API Status, API Interrupt, API Compare Value and Counter Rollover Interrupt.<br>-    Enable the Real Time Counter<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>STM</font></b><br><font face='arial' color='#000000'><i>-    Disable STM <br>-    Configure Counter Pre-Scalar<br>-    Configure STM Channels, Compare Values and Interrupts<br>-    Enable STM<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>PIT</font></b><br><font face='arial' color='#000000'><i>-    Disable PIT <br>-    Configure PIT Channels, Compare Values and Interrupts<br>-    Enable PIT<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>Flash BIU</font></b><br><font face='arial' color='#000000'><i>-    Configure Following registers<br>-	FLASH BIU Control Register<br>-	FLASH BIU Access Protection Register<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>MPU</font></b><br><font face='arial' color='#000000'><i>-     Assigning access rights to different masters<br>-     Region descriptor entries for MPU.<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>FlexCAN</font></b><br><font face='arial' color='#000000'><i>-	Set the following setting for CAN_0, CAN_1, CAN_2, CAN_3, CAN_4, CAN_5<br>-	Reset the flexcan , enable the module ,set the clock source<br>-	Disable the module and set the halt bit<br>-	Now set the following register<br>-	CR control register<br>-	RX group mask, Rx14 mask, Rx15 mask, IMRL, IMRH, register<br>-	Now enable the module and reset the halt bit<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>ADC</font></b><br><font face='arial' color='#000000'><i>-    Set following registers for ADC<br>-    CLR0 to CLR4<br>-    Interrupt register (IMR)<br>-    Channel Setup and Pre-Sampling Registers<br>-    Set Following Registers for ADC CTU<br>-    Control Status Register (CTU_CSR)<br>-    Event Configuration Register (CTU_EVTCFGRx)<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>eMIOS</font></b><br><font face='arial' color='#000000'><i>-	Set following registers for EMIOS<br>-	Module Configuration register<br>-	Output update disable register<br>-	Channel Disable register (enable all Channels)<br>-   Configure  Unified Channel registers: EMIOS_CADR, EMIOS_CBDR, EMIOS_ ALTCADR, EMIOS_CCR<br>-   Channel Disable register (enable / disable the Channels)<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>DSPI</font></b><br><font face='arial' color='#000000'><i>-	Set following registers for DSPI <br>-	Clock and transfer Attributes register<br>-	Interrupt enable register<br>-	Module control register<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>I2C</font></b><br><font face='arial' color='#000000'><i>-    Configuration of Slave Address<br>-    Bus baud rate settings<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>LINFlex</font></b><br><font face='arial' color='#000000'><i>Configuration for Linflex subparts for <br>-    General Configuration<br>-    Identifier and interrupts configuration.<br>-    Timeout Configuration<br>-    UART configuration<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><font face='arial' color='#000000'><i><b><font face='Arial'>SIU</font></b><br>-	Set the pad register for the following peripheral<br>-    External interrupt configuration<br>-    Wakeup configuration<br>-    GPIO Parallel Port configuration with mask.<br>-    PSMI configuration for multiple functional pads on same pin.<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+<TR>
+<TD align='left' valign='center' width='50%' bgcolor='#CCFFCC' ><TABLE  cellpadding='2' border='2' bordercolor='#000000' bgcolor= '#FFFFFF' width='80%' align = 'center' >
+<TR>
+<TD ><b><font face='Arial'>EDMA</font></b><br><font face='arial' color='#000000'><i>-	Set following registers for DMA<br>-	Configuration register<br>-	EDMA Enable error Interrupt request register<br>-	Channel priority register<br></i></font> </TD>
+</TR>
+</TABLE>
+</TD>
+<TD align='right' valign='center' width='50%' bgcolor='#CCFFCC' ></TD>
+</TR>
+</TABLE>
+</BODY></HTML>

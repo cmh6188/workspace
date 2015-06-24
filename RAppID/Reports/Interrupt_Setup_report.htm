@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: Interrupt Setup  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><br><center><h3><font face='Arial'></font></h3></center>
+
+<br><font face='arial'><h3><font face='Arial'>Interrupt Setup</font></h3>The Mode Entry supports four different types of interrupts, which can be used to monitor different events happening in the module.<br><br>Status of mode Entry Interrupts is as follows,</font> <br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#CCFFCC"><b><center><h3>Interrupt Setup</h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Interrupts</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Status</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>Invalid Mode Configuration</font> </TD>
+<TD ><font face='arial' color='blue'>Disabled</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>Invalid Mode</font> </TD>
+<TD ><font face='arial' color='blue'>Disabled</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>SAFE Mode</font> </TD>
+<TD ><font face='arial' color='blue'>Disabled</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>Mode Transition</font> </TD>
+<TD ><font face='arial' color='blue'>Disabled</font> </TD>
+</TR>
+</TABLE>
+<br><font face='arial'><br><b><font face='Arial'>Register</font></b><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ME_IM</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/MODEENTRY/ME_IM.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Interrupt Mask</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FDC010 : 0x10</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Interrupt Mask</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-27</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>28</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>M_ICONF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Invalid mode configuration interrupt: Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>29</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>M_IMODE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Invalid mode interrupt: Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>M_SAFE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>SAFE mode interrupt: Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>M_MTC</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Mode Transition complete interrupt:  Disabled</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

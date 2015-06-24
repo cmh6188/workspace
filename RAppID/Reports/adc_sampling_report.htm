@@ -1,0 +1,238 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: ADC_0  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><center><h3><font face='Arial'></font></h3></center>
+
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="4" bgcolor= "#CCFFCC"><b><center><h3>Sampling Timing Control</h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Channels</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Input Latch</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Input sampling(Clock Cycles)</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Input Comparison(Clock Cycles)</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>0-15</font> </TD>
+<TD ><font face='arial'>0</font> </TD>
+<TD ><font face='arial'>4</font> </TD>
+<TD ><font face='arial'>2</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>32-59</font> </TD>
+<TD ><font face='arial'>0</font> </TD>
+<TD ><font face='arial'>4</font> </TD>
+<TD ><font face='arial'>2</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>64-95</font> </TD>
+<TD ><font face='arial'>0</font> </TD>
+<TD ><font face='arial'>4</font> </TD>
+<TD ><font face='arial'>2</font> </TD>
+</TR>
+</TABLE>
+<font face='arial'><br><br><font face='arial'>Offset Shift Duration for 0 - 15 (precision channels) </font> <u><font face='arial' color='blue'>0</font></u><font face='arial'> Clock Cycles</font> </font> <font face='arial'><br><br><b><font face='Arial'>Register</font></b><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ADC_0_CTR0</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ADC/ADCx_CTR0.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Conversion Timing Register 0</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE00094 : 0x94</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000203 : 0x00000203</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Conversion Timing Register 0</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INPLATCH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Phase duration Latch: 0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>18-19</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OFFSHIFT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Offset Shift Duration : 0 cycles</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>20</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>21-22</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IMPCMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>01</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Comparison Duration: 2 cycles</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INPSAMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000011</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Sampling Duration: 4 cycles</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ADC_0_CTR1</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ADC/ADCx_CTR1.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Conversion Timing Register 1</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE00098 : 0x98</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000203 : 0x00000203</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Conversion Timing Register 1</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INPLATCH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Phase duration Latch: 0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17-20</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>21-22</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IMPCMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>01</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Comparison Duration: 2 cycles</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INPSAMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000011</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Sampling Duration: 4 cycles</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ADC_0_CTR2</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ADC/ADCx_CTR2.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Conversion Timing Register 2</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE0009C : 0x9C</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000203 : 0x00000203</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Conversion Timing Register 2</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INPLATCH</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Phase duration Latch: 0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17-20</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>21-22</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IMPCMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>01</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Comparison Duration: 2 cycles</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INPSAMP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000011</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Input Sampling Duration: 4 cycles</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

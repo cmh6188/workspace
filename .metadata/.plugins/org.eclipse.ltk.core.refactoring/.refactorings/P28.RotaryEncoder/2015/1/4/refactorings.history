@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;P28.RotaryEncoder/Sources/jjh_header&apos; to &apos;jjh_header.h&apos;" description="Rename resource &apos;jjh_header&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sources/jjh_header" name="jjh_header.h" stamp="1421976611385" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;P28.RotaryEncoder/Sources/jjh_heaser.c&apos; to &apos;jjh_header.c&apos;" description="Rename resource &apos;jjh_heaser.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sources/jjh_heaser.c" name="jjh_header.c" stamp="1421976653058" updateReferences="true"/>
+</session>

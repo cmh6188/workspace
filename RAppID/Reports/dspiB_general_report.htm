@@ -1,0 +1,243 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: DSPI_1  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><font face='arial'><b><font face='Arial'>General Configuration</font></b><br><br>DSPI module is <u><font face='arial' color='blue'>Enabled</font></u> by <u><font face='arial' color='blue'>running</font></u> it's clock. It is in <u><font face='arial' color='blue'>Master</font></u> mode and it is configured as <u><font face='arial' color='blue'>SPI (Serial Peripheral Interface.) </font></u> In debug mode it <u><font face='arial' color='blue'>does not halt</font></u> serial transfer. Modified SPI transfer format is <u><font face='arial' color='blue'>disabled</font></u>. Transmit FIFO is <u><font face='arial' color='blue'>enabled</font></u> and receive FIFO is <u><font face='arial' color='blue'>enabled.</font></u> Incoming data is <u><font face='arial' color='blue'>ignored</font></u> once receive FIFO is full. Sample point is <u><font face='arial' color='blue'>0.</font></u> Continuous serial communication clock is <u><font face='arial' color='blue'>disabled</font></u> and DSPI transfer is <u><font face='arial' color='blue'>started.</font></u>The Transfer count at reset is set to <u><font face='arial' color='blue'>0</font></u><br><br>Peripheral chip select strobe is <u><font face='arial' color='blue'>disabled</font></u> and chip selection details are as below:<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#CCFFCC"><b><center><h3>Chip Selection Details</h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Chip Sel. No</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Inactive State</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>0</font> </TD>
+<TD ><font face='arial'>High</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>1</font> </TD>
+<TD ><font face='arial'>Low</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>2</font> </TD>
+<TD ><font face='arial'>Low</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>3</font> </TD>
+<TD ><font face='arial'>Low</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>4</font> </TD>
+<TD ><font face='arial'>Low</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>5</font> </TD>
+<TD ><font face='arial'>Low</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>DSPI1_MCR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/DSPI/DSPIx_MCR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>module configuration register  </font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFF94000 : 0x0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x80010000 : 0x00000001</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>module configuration register  </font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MSTR</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>DSPI is configured as a Master.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CONT_SCKE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Continuous Running of serial Communication Clock is Disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2-3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DCONF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>DSPI is configured as a SPI (Serial Peripheral Interface.)</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>FRZ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Disabled the DSPI transfers to be stopped on the next frame boundary when the device enters debug mode.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>5</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MTFE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Modified SPI transfer format is Disabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSSE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>CS5_x is used as the Peripheral chip select 5 signal</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ROOE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>When the RXFIFO overflow condition occurs, the incoming Data is ignored.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSIS5</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Inactive State of an Peripheral Chip Select signal PCS5 is Low.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSIS4</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Inactive State of an Peripheral Chip Select signal PCS4 is Low.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSIS3</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Inactive State of an Peripheral Chip Select signal PCS3 is Low.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSIS2</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Inactive State of an Peripheral Chip Select signal PCS2 is Low.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSIS1</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Inactive State of an Peripheral Chip Select signal PCS1 is Low.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PCSIS0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Inactive State of an Peripheral Chip Select signal PCS0 is High.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MDIS</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>DSPI clock is running, hence the DSPI is in Normal Mode.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIS_TXF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Transmit FIFO is Enabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIS_RXF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Receive FIFO is Enabled.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>20</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CLR_TXF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Don't clear the TX FIFO counter</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>21</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CLR_RXF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Don't clear the RX FIFO counter</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>22-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SMPL_PT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Number of system clock cycles between odd-numbered edge of SCK and sampling of SIN is 0.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>HALT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>DSPI transfer is Started.</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>DSPI1_TCR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/DSPI/DSPIx_TCR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>DSPI transfer count register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFF94008 : 0x8</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>DSPI transfer count register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SPI_TCNT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Transfer count at reset is set to 0</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

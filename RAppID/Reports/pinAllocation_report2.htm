@@ -1,0 +1,4260 @@
+<HTML>
+<STYLE>
+.clsHorizLR     { writing-mode:lr-tb }
+.clsHorizRL         { writing-mode:rl-tb }
+.clsVertTB          { writing-mode:tb-rl }
+.clsVertBT          { writing-mode:bt-rl }
+</STYLE>
+<b><center><font face='arial'  size='5' align=>Pin Allocation Report<BR> </font></center></b> <TABLE  cellpadding='0' cellspacing='0' border='1' bordercolor='BLACK' bgcolor= 'WHITE' width='100%' align = 'center' >
+<TR>
+<TD width='80' height='80' ></TD>
+<TD width='null' height='null' bgcolor='#B9A979'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>TXD_0</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC8</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC13</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC12</center></font></TD>
+<TD width='null' height='null' bgcolor='#3C6450'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE7 O</center></font></TD>
+<TD width='null' height='null' bgcolor='#3C6450'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE6 O</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PH8</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PH7</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PH6</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PH5</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PH4</center></font></TD>
+<TD width='null' height='null' bgcolor='#3C6450'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE5 O</center></font></TD>
+<TD width='null' height='null' bgcolor='#3C6450'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE4 O</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC4</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC5</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE3</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE2</center></font></TD>
+<TD width='null' height='null' bgcolor='#F6CFA1'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>TCK</center></font></TD>
+<TD width='null' height='null' bgcolor='#F6CFA1'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>TDI</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VSS_LV</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VDD_LV</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VDD_HV</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VSS_HV</center></font></TD>
+<TD width='null' height='null' bgcolor='#F6CFA1'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>TDO</center></font></TD>
+<TD width='null' height='null' bgcolor='#F6CFA1'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>TMS</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA6</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA5</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC2</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC3</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PG11</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PG10</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE15</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE14</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PG15</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PG14</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PE12</center></font></TD>
+<TD width='80' height='80' ></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='#B9A979' ><font color='BLACK' size=1><center>RXD_0</center></font></TD>
+<TD width='null' height='null' >1</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >143</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >142</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >141</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >140</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >139</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >138</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >137</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >136</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >135</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >134</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >133</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >132</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >131</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >130</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >129</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >128</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >127</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >126</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >125</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >124</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >123</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >122</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >121</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >120</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >119</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >118</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >117</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >116</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >115</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >114</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >113</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >112</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >111</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >110</TD>
+<TD width='null' height='null' >108</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA11</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PC9</center></font></TD>
+<TD width='null' height='null' >2</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >107</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA10</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PC14</center></font></TD>
+<TD width='null' height='null' >3</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >106</TD>
+<TD width='80' height='null' bgcolor='#3C6450' ><font color='BLACK' size=1><center>PA9 I</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PC15</center></font></TD>
+<TD width='null' height='null' >4</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >105</TD>
+<TD width='80' height='null' bgcolor='#3C6450' ><font color='BLACK' size=1><center>PA8 I</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG5</center></font></TD>
+<TD width='null' height='null' >5</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >104</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA7</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG4</center></font></TD>
+<TD width='null' height='null' >6</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >103</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PE13</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG3</center></font></TD>
+<TD width='null' height='null' >7</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >102</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PF14</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG2</center></font></TD>
+<TD width='null' height='null' >8</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >101</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PF15</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA2</center></font></TD>
+<TD width='null' height='null' >9</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >100</TD>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VDD_HV</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='#3C6450' ><font color='BLACK' size=1><center>PE0 I</center></font></TD>
+<TD width='null' height='null' >10</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >99</TD>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VSS_HV</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA1</center></font></TD>
+<TD width='null' height='null' >11</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >98</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG0</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PE1</center></font></TD>
+<TD width='null' height='null' >12</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >97</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG1</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PE8</center></font></TD>
+<TD width='null' height='null' >13</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >96</TD>
+<TD width='80' height='null' bgcolor='#C78DF5' ><font color='BLACK' size=1><center>PCS_1.0 O</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PE9</center></font></TD>
+<TD width='null' height='null' >14</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >95</TD>
+<TD width='80' height='null' bgcolor='#C78DF5' ><font color='BLACK' size=1><center>SCK_1 O</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PE10</center></font></TD>
+<TD width='null' height='null' >15</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >94</TD>
+<TD width='80' height='null' bgcolor='#C78DF5' ><font color='BLACK' size=1><center>SOUT_1</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA0</center></font></TD>
+<TD width='null' height='null' >16</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >93</TD>
+<TD width='80' height='null' bgcolor='#C78DF5' ><font color='BLACK' size=1><center>SIN_1</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PE11</center></font></TD>
+<TD width='null' height='null' >17</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >92</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG12</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VSS_HV</center></font></TD>
+<TD width='null' height='null' >18</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >91</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG13</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VDD_HV</center></font></TD>
+<TD width='null' height='null' >19</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >90</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PA3</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VSS_HV</center></font></TD>
+<TD width='null' height='null' >20</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >89</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB15</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>RESET</center></font></TD>
+<TD width='null' height='null' >21</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >88</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PD15</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VSS_LV</center></font></TD>
+<TD width='null' height='null' >22</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >87</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB14</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VDD_LV</center></font></TD>
+<TD width='null' height='null' >23</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >86</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PD14</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VDD_BV</center></font></TD>
+<TD width='null' height='null' >24</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >85</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB13</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG9</center></font></TD>
+<TD width='null' height='null' >25</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >84</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PD13</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG8</center></font></TD>
+<TD width='null' height='null' >26</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >83</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB12</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='#CCFFFF' ><font color='BLACK' size=1><center>CNRX_1</center></font></TD>
+<TD width='null' height='null' >27</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >82</TD>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VDD_HV_ADC1</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='#CCFFFF' ><font color='BLACK' size=1><center>CNTX_1</center></font></TD>
+<TD width='null' height='null' >28</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >81</TD>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VSS_HV_ADC1</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG7</center></font></TD>
+<TD width='null' height='null' >29</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >80</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PD11</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PG6</center></font></TD>
+<TD width='null' height='null' >30</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >79</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PD10</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB0</center></font></TD>
+<TD width='null' height='null' >31</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >78</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PD9</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB1</center></font></TD>
+<TD width='null' height='null' >32</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >77</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB7</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PF9</center></font></TD>
+<TD width='null' height='null' >33</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >76</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB6</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PF8</center></font></TD>
+<TD width='null' height='null' >34</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >75</TD>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PB5</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PF12</center></font></TD>
+<TD width='null' height='null' >35</TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' ></TD>
+<TD width='null' height='null' >74</TD>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VDD_HV_ADC0</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='null' bgcolor='GRAY' ><font color='BLACK' size=1><center>PC6</center></font></TD>
+<TD width='null' height='null' >36</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >38</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >39</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >40</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >41</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >42</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >43</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >44</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >45</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >46</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >47</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >48</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >49</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >50</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >51</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >52</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >53</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >54</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >55</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >56</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >57</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >58</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >59</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >60</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >61</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >62</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >63</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >64</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >65</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >66</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >67</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >68</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >69</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >70</TD>
+<TD width='null' height='null'  STYLE='writing-mode:tb-rl' >71</TD>
+<TD width='null' height='null' >73</TD>
+<TD width='80' height='null' bgcolor='GREEN' ><font color='BLACK' size=1><center>VSS_HV_ADC0</center></font></TD>
+</TR>
+<TR>
+<TD width='80' height='80' ></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PC7</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF10</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF11</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA15</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF13</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA14</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA4</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA13</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PA12</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VDD_LV</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VSS_LV</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>XTAL</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VSS_HV</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>EXTAL</center></font></TD>
+<TD width='null' height='null' bgcolor='GREEN'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>VDD_HV</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PB9</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PB8</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PB10</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF0</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF1</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF2</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF3</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF4</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF5</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF6</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PF7</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD0</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD1</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD2</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD3</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD4</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD5</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD6</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD7</center></font></TD>
+<TD width='null' height='null' bgcolor='GRAY'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>PD8</center></font></TD>
+<TD width='null' height='null' bgcolor='#C86400'  STYLE='writing-mode:tb-rl' ><font color='BLACK' size=1><center>ADC_0_ADC_1_ANP0</center></font></TD>
+<TD width='80' height='80' ></TD>
+</TR>
+</TABLE>
+Note: On Configuring I2C Pins as output, code will set it as I/O. This is essential to transmit I2C frames.<br><br><TABLE  cellpadding='2' border='1' bordercolor='BLACK' bgcolor= 'WHITE' width='15%' align = 'center' >
+<TR>
+<TD width='150' bgcolor='#C86400' >ADC PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#C78DF5' >DSPI PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#CCFFFF' >FlexCAN PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#3C6450' >GPIO PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#FFFFB1' >I2C PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#669933' >LINFlex PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#F6CFA1' >MISC PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#00AAFF' >eMIOS PINS</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#FFFFFF' >SIU-assigned
+WIZARD-notassigned</TD>
+</TR>
+<TR>
+<TD width='150' bgcolor='#999999' >GPIO Tristate</TD>
+</TR>
+</TABLE>
+<br><br><b><font face='Arial' size='6'> Function Assignment for MPC5606B 144 QFP package</font></b><TABLE  cellpadding='2' border='1' bordercolor='BLACK' bgcolor= 'WHITE' width='100%' align = 'center' >
+<TR>
+<TD colspan='3' ></TD>
+<TD colspan='2' >Primary Function</TD>
+<TD colspan='2' >Alternate Function 1</TD>
+<TD colspan='2' >Alternate Function 2</TD>
+<TD colspan='2' >Alternate Function 3</TD>
+<TD colspan='2' >Input Function 0</TD>
+<TD colspan='2' >Input Function 1</TD>
+<TD colspan='2' >Analog Pad Conrol</TD>
+<TD colspan='3' >Assigned Function</TD>
+</TR>
+<TR>
+<TD bgcolor='#99CCFF' >SIU PCR#</TD>
+<TD bgcolor='#99CCFF' >Package Pin #</TD>
+<TD bgcolor='#99CCFF' >Port Name</TD>
+<TD bgcolor='#99CCFF' >GPIO<BR>(PA=3'b000)</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >ALT 1<br>(PA=3'b001)</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >ALT 2<br>(PA=3'b010)</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >ALT 3<br>(PA=3'b011)</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >IN 0</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >IN 1</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >APC</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >Assigned Function</TD>
+<TD bgcolor='#99CCFF' >dir</TD>
+<TD bgcolor='#99CCFF' >User Assigned<br>Signal Name</TD>
+</TR>
+<TR>
+<TD bgcolor='' >0</TD>
+<TD bgcolor='' >16</TD>
+<TD bgcolor='' >PA0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_0</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#F6CFA1' >CLKOUT</TD>
+<TD bgcolor='#F6CFA1' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_13</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >1</TD>
+<TD bgcolor='' >11</TD>
+<TD bgcolor='' >PA1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_1</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >NMI</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >2</TD>
+<TD bgcolor='' >9</TD>
+<TD bgcolor='' >PA2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_2</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_MA2</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >3</TD>
+<TD bgcolor='' >90</TD>
+<TD bgcolor='' >PA3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_3</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#669933' >TXD_5</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#C78DF5' >PCS_1.4</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_1_ANS0</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >4</TD>
+<TD bgcolor='' >43</TD>
+<TD bgcolor='' >PA4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_4</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_1.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#669933' >RXD_5</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >5</TD>
+<TD bgcolor='' >118</TD>
+<TD bgcolor='' >PA5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_5</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#669933' >TXD_4</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >6</TD>
+<TD bgcolor='' >119</TD>
+<TD bgcolor='' >PA6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_6</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_1.1</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#669933' >RXD_4</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >7</TD>
+<TD bgcolor='' >104</TD>
+<TD bgcolor='' >PA7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_7</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#669933' >TXD_3</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_1_ANS1</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >8</TD>
+<TD bgcolor='' >105</TD>
+<TD bgcolor='' >PA8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_8</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_14</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_3</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >9</TD>
+<TD bgcolor='' >106</TD>
+<TD bgcolor='' >PA9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_9</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_1.2</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >10</TD>
+<TD bgcolor='' >107</TD>
+<TD bgcolor='' >PA10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_10</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#FFFFB1' >SDA_0</TD>
+<TD bgcolor='#FFFFB1' >IO</TD>
+<TD bgcolor='#669933' >TXD_2</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_1_ANS2</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >11</TD>
+<TD bgcolor='' >108</TD>
+<TD bgcolor='' >PA11</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_11</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#FFFFB1' >SCL_0</TD>
+<TD bgcolor='#FFFFB1' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_2</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_1_ANS3</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >12</TD>
+<TD bgcolor='' >45</TD>
+<TD bgcolor='' >PA12</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_28</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.3</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#C78DF5' >SIN_0</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >13</TD>
+<TD bgcolor='' >44</TD>
+<TD bgcolor='' >PA13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_0</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_29</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >14</TD>
+<TD bgcolor='' >42</TD>
+<TD bgcolor='' >PA14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_0</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >15</TD>
+<TD bgcolor='' >40</TD>
+<TD bgcolor='' >PA15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_1</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >16</TD>
+<TD bgcolor='' >31</TD>
+<TD bgcolor='' >PB0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_0</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_30</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#669933' >TXD_0</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >17</TD>
+<TD bgcolor='' >32</TD>
+<TD bgcolor='' >PB1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_31</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#669933' >RXD_0</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_0</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >18</TD>
+<TD bgcolor='' >144</TD>
+<TD bgcolor='' >PB2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#669933' >TXD_0</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#FFFFB1' >SDA_0</TD>
+<TD bgcolor='#FFFFB1' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_30</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >TXD_0</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#669933' >PB2_UART_Tx</TD>
+</TR>
+<TR>
+<TD bgcolor='' >19</TD>
+<TD bgcolor='' >1</TD>
+<TD bgcolor='' >PB3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_31</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#FFFFB1' >SCL_0</TD>
+<TD bgcolor='#FFFFB1' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_0</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_0</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='#669933' >PB3_UART_Rx</TD>
+</TR>
+<TR>
+<TD bgcolor='' >20</TD>
+<TD bgcolor='' >72</TD>
+<TD bgcolor='' >PB4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP0</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP0</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#C86400' >ANP0_Pot_Input</TD>
+</TR>
+<TR>
+<TD bgcolor='' >21</TD>
+<TD bgcolor='' >75</TD>
+<TD bgcolor='' >PB5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP1</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >22</TD>
+<TD bgcolor='' >76</TD>
+<TD bgcolor='' >PB6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP2</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >23</TD>
+<TD bgcolor='' >77</TD>
+<TD bgcolor='' >PB7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP3</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >24</TD>
+<TD bgcolor='' >53</TD>
+<TD bgcolor='' >PB8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='#F6CFA1' >XTAL32</TD>
+<TD bgcolor='#F6CFA1' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS0 & ADC_1_ANS4</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >25</TD>
+<TD bgcolor='' >52</TD>
+<TD bgcolor='' >PB9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='#F6CFA1' >EXTAL32</TD>
+<TD bgcolor='#F6CFA1' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS1& ADC_1_ANS5</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >26</TD>
+<TD bgcolor='' >54</TD>
+<TD bgcolor='' >PB10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS2& ADC_1_ANS6</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >28</TD>
+<TD bgcolor='' >83</TD>
+<TD bgcolor='' >PB12</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_4</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_0.1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANX0</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >29</TD>
+<TD bgcolor='' >85</TD>
+<TD bgcolor='' >PB13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_5</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_0.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANX1</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >30</TD>
+<TD bgcolor='' >87</TD>
+<TD bgcolor='' >PB14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_6</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_0.3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANX2</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >31</TD>
+<TD bgcolor='' >89</TD>
+<TD bgcolor='' >PB15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_7</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_0.4</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANX3</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >32</TD>
+<TD bgcolor='' >126</TD>
+<TD bgcolor='' >PC0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TDI</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TDI</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >33</TD>
+<TD bgcolor='' >121</TD>
+<TD bgcolor='' >PC1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TDO</TD>
+<TD bgcolor='#F6CFA1' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TDO</TD>
+<TD bgcolor='#F6CFA1' >O</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >34</TD>
+<TD bgcolor='' >117</TD>
+<TD bgcolor='' >PC2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_1</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_4</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >35</TD>
+<TD bgcolor='' >116</TD>
+<TD bgcolor='' >PC3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#C86400' >ADC_0_MA0</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_1</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_4</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >36</TD>
+<TD bgcolor='' >131</TD>
+<TD bgcolor='' >PC4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_31</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_1</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_3</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >37</TD>
+<TD bgcolor='' >130</TD>
+<TD bgcolor='' >PC5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#CCFFFF' >CNTX_3</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >38</TD>
+<TD bgcolor='' >36</TD>
+<TD bgcolor='' >PC6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#669933' >TXD_1</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_28</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >39</TD>
+<TD bgcolor='' >37</TD>
+<TD bgcolor='' >PC7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_29</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_1</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >40</TD>
+<TD bgcolor='' >143</TD>
+<TD bgcolor='' >PC8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#669933' >TXD_2</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_3</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >41</TD>
+<TD bgcolor='' >2</TD>
+<TD bgcolor='' >PC9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_7</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_2</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >42</TD>
+<TD bgcolor='' >28</TD>
+<TD bgcolor='' >PC10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_1</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#CCFFFF' >CNTX_4</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#C86400' >ADC_0_MA1</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNTX_1</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#CCFFFF' >PC10_CAN1_Tx</TD>
+</TR>
+<TR>
+<TD bgcolor='' >43</TD>
+<TD bgcolor='' >27</TD>
+<TD bgcolor='' >PC11</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_MA2</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='#CCFFFF' >CNRX_1</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_4</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_1</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='#CCFFFF' >PC11_CAN1_Rx</TD>
+</TR>
+<TR>
+<TD bgcolor='' >44</TD>
+<TD bgcolor='' >141</TD>
+<TD bgcolor='' >PC12</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_12</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_2</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >45</TD>
+<TD bgcolor='' >142</TD>
+<TD bgcolor='' >PC13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_13</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >46</TD>
+<TD bgcolor='' >3</TD>
+<TD bgcolor='' >PC14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_14</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_2</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >47</TD>
+<TD bgcolor='' >4</TD>
+<TD bgcolor='' >PC15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_15</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >48</TD>
+<TD bgcolor='' >63</TD>
+<TD bgcolor='' >PD0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP4</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >49</TD>
+<TD bgcolor='' >64</TD>
+<TD bgcolor='' >PD1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP5</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >50</TD>
+<TD bgcolor='' >65</TD>
+<TD bgcolor='' >PD2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP6</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >51</TD>
+<TD bgcolor='' >66</TD>
+<TD bgcolor='' >PD3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP7</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >52</TD>
+<TD bgcolor='' >67</TD>
+<TD bgcolor='' >PD4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP8</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >53</TD>
+<TD bgcolor='' >68</TD>
+<TD bgcolor='' >PD5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP9</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >54</TD>
+<TD bgcolor='' >69</TD>
+<TD bgcolor='' >PD6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP10</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >55</TD>
+<TD bgcolor='' >70</TD>
+<TD bgcolor='' >PD7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP11</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >56</TD>
+<TD bgcolor='' >71</TD>
+<TD bgcolor='' >PD8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP12</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >57</TD>
+<TD bgcolor='' >78</TD>
+<TD bgcolor='' >PD9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP13</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >58</TD>
+<TD bgcolor='' >79</TD>
+<TD bgcolor='' >PD10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP14</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >59</TD>
+<TD bgcolor='' >80</TD>
+<TD bgcolor='' >PD11</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ADC_1_ANP15</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >61</TD>
+<TD bgcolor='' >84</TD>
+<TD bgcolor='' >PD13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_25</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS5</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >62</TD>
+<TD bgcolor='' >86</TD>
+<TD bgcolor='' >PD14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_26</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS6</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >63</TD>
+<TD bgcolor='' >88</TD>
+<TD bgcolor='' >PD15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_27</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS7</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >64</TD>
+<TD bgcolor='' >10</TD>
+<TD bgcolor='' >PE0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_16</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_5</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >I</TD>
+<TD bgcolor='#3C6450' >PE0_S1_Input</TD>
+</TR>
+<TR>
+<TD bgcolor='' >65</TD>
+<TD bgcolor='' >12</TD>
+<TD bgcolor='' >PE1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_17</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_5</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >66</TD>
+<TD bgcolor='' >128</TD>
+<TD bgcolor='' >PE2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_18</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_1</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >67</TD>
+<TD bgcolor='' >129</TD>
+<TD bgcolor='' >PE3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_19</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >68</TD>
+<TD bgcolor='' >132</TD>
+<TD bgcolor='' >PE4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_20</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_1</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >O</TD>
+<TD bgcolor='#3C6450' >PE4_LED1_Output</TD>
+</TR>
+<TR>
+<TD bgcolor='' >69</TD>
+<TD bgcolor='' >133</TD>
+<TD bgcolor='' >PE5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_21</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#C86400' >ADC_0_MA2</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >O</TD>
+<TD bgcolor='#3C6450' >PE5_LED2_Output</TD>
+</TR>
+<TR>
+<TD bgcolor='' >70</TD>
+<TD bgcolor='' >139</TD>
+<TD bgcolor='' >PE6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_22</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C86400' >ADC_0_MA1</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >O</TD>
+<TD bgcolor='#3C6450' >PE6_LED3_Output</TD>
+</TR>
+<TR>
+<TD bgcolor='' >71</TD>
+<TD bgcolor='' >140</TD>
+<TD bgcolor='' >PE7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_23</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C86400' >ADC_0_MA0</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >O</TD>
+<TD bgcolor='#3C6450' >PE7_LED4_Output</TD>
+</TR>
+<TR>
+<TD bgcolor='' >72</TD>
+<TD bgcolor='' >13</TD>
+<TD bgcolor='' >PE8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_2</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_22</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_3</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >73</TD>
+<TD bgcolor='' >14</TD>
+<TD bgcolor='' >PE9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_23</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_2</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_3</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >74</TD>
+<TD bgcolor='' >15</TD>
+<TD bgcolor='' >PE10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#669933' >TXD_3</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#C78DF5' >PCS_1.3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_30</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >75</TD>
+<TD bgcolor='' >17</TD>
+<TD bgcolor='' >PE11</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_24</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.4</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_3</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >76</TD>
+<TD bgcolor='' >109</TD>
+<TD bgcolor='' >PE12</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_19</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_2</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_1_ANS7</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >77</TD>
+<TD bgcolor='' >103</TD>
+<TD bgcolor='' >PE13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_20</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >78</TD>
+<TD bgcolor='' >112</TD>
+<TD bgcolor='' >PE14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_2</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_21</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >79</TD>
+<TD bgcolor='' >113</TD>
+<TD bgcolor='' >PE15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_22</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >80</TD>
+<TD bgcolor='' >55</TD>
+<TD bgcolor='' >PF0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_10</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS8</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >81</TD>
+<TD bgcolor='' >56</TD>
+<TD bgcolor='' >PF1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_11</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.4</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS9</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >82</TD>
+<TD bgcolor='' >57</TD>
+<TD bgcolor='' >PF2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_12</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS10</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >83</TD>
+<TD bgcolor='' >58</TD>
+<TD bgcolor='' >PF3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_13</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS11</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >84</TD>
+<TD bgcolor='' >59</TD>
+<TD bgcolor='' >PF4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_14</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS12</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >85</TD>
+<TD bgcolor='' >60</TD>
+<TD bgcolor='' >PF5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_22</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS13</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >86</TD>
+<TD bgcolor='' >61</TD>
+<TD bgcolor='' >PF6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_23</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ANS14</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >87</TD>
+<TD bgcolor='' >62</TD>
+<TD bgcolor='' >PF7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_1.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_ANS15</TD>
+<TD bgcolor='#C86400' >I</TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >88</TD>
+<TD bgcolor='' >34</TD>
+<TD bgcolor='' >PF8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_3</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#C78DF5' >PCS_0.4</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#CCFFFF' >CNTX_2</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >89</TD>
+<TD bgcolor='' >33</TD>
+<TD bgcolor='' >PF9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_1</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.5</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_2</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_3</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >90</TD>
+<TD bgcolor='' >38</TD>
+<TD bgcolor='' >PF10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#669933' >TXD_4</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_2</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >91</TD>
+<TD bgcolor='' >39</TD>
+<TD bgcolor='' >PF11</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_0.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_3</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_4</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >92</TD>
+<TD bgcolor='' >35</TD>
+<TD bgcolor='' >PF12</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_25</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#669933' >TXD_5</TD>
+<TD bgcolor='#669933' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >93</TD>
+<TD bgcolor='' >41</TD>
+<TD bgcolor='' >PF13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_26</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#669933' >RXD_5</TD>
+<TD bgcolor='#669933' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >94</TD>
+<TD bgcolor='' >102</TD>
+<TD bgcolor='' >PF14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_4</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_27</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_1</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >95</TD>
+<TD bgcolor='' >101</TD>
+<TD bgcolor='' >PF15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_4</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_1</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='#CCFFFF' >CNRX_4</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >96</TD>
+<TD bgcolor='' >98</TD>
+<TD bgcolor='' >PG0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#CCFFFF' >CNTX_5</TD>
+<TD bgcolor='#CCFFFF' >O</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_23</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >97</TD>
+<TD bgcolor='' >97</TD>
+<TD bgcolor='' >PG1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_24</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#CCFFFF' >CNRX_5</TD>
+<TD bgcolor='#CCFFFF' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >98</TD>
+<TD bgcolor='' >8</TD>
+<TD bgcolor='' >PG2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_11</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >99</TD>
+<TD bgcolor='' >7</TD>
+<TD bgcolor='' >PG3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_12</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_3.0</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >100</TD>
+<TD bgcolor='' >6</TD>
+<TD bgcolor='' >PG4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_13</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_3</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >101</TD>
+<TD bgcolor='' >5</TD>
+<TD bgcolor='' >PG5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_14</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_3</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >102</TD>
+<TD bgcolor='' >30</TD>
+<TD bgcolor='' >PG6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_15</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >103</TD>
+<TD bgcolor='' >29</TD>
+<TD bgcolor='' >PG7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_16</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_30</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >104</TD>
+<TD bgcolor='' >26</TD>
+<TD bgcolor='' >PG8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_17</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_2.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >105</TD>
+<TD bgcolor='' >25</TD>
+<TD bgcolor='' >PG9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_18</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SCK_2</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >106</TD>
+<TD bgcolor='' >114</TD>
+<TD bgcolor='' >PG10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_24</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_31</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_4</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >107</TD>
+<TD bgcolor='' >115</TD>
+<TD bgcolor='' >PG11</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_25</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_4.0</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >108</TD>
+<TD bgcolor='' >92</TD>
+<TD bgcolor='' >PG12</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_26</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_4</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >109</TD>
+<TD bgcolor='' >91</TD>
+<TD bgcolor='' >PG13</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_0_27</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_4</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >110</TD>
+<TD bgcolor='' >110</TD>
+<TD bgcolor='' >PG14</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_0</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >111</TD>
+<TD bgcolor='' >111</TD>
+<TD bgcolor='' >PG15</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_1</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >112</TD>
+<TD bgcolor='' >93</TD>
+<TD bgcolor='' >PH0</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_2</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_1</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SIN_1</TD>
+<TD bgcolor='#C78DF5' >I</TD>
+<TD bgcolor='#C78DF5' >PH0_DSPI1_DATA_IN</TD>
+</TR>
+<TR>
+<TD bgcolor='' >113</TD>
+<TD bgcolor='' >94</TD>
+<TD bgcolor='' >PH1</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_3</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SOUT_1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SOUT_1</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C78DF5' >PH1_DSPI1_DATA_OUT</TD>
+</TR>
+<TR>
+<TD bgcolor='' >114</TD>
+<TD bgcolor='' >95</TD>
+<TD bgcolor='' >PH2</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_4</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >SCK_1</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >SCK_1 O</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C78DF5' >PH2_DSPI1_CLK_OUT</TD>
+</TR>
+<TR>
+<TD bgcolor='' >115</TD>
+<TD bgcolor='' >96</TD>
+<TD bgcolor='' >PH3</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_5</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_1.0</TD>
+<TD bgcolor='#C78DF5' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C78DF5' >PCS_1.0 O</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C78DF5' >PH3_DSPI1_CS0_OUT</TD>
+</TR>
+<TR>
+<TD bgcolor='' >116</TD>
+<TD bgcolor='' >134</TD>
+<TD bgcolor='' >PH4</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_6</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >117</TD>
+<TD bgcolor='' >135</TD>
+<TD bgcolor='' >PH5</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_7</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >118</TD>
+<TD bgcolor='' >136</TD>
+<TD bgcolor='' >PH6</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_8</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#C86400' >ADC_0_MA2</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >119</TD>
+<TD bgcolor='' >137</TD>
+<TD bgcolor='' >PH7</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_9</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.3</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C86400' >ADC_0_MA1</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >120</TD>
+<TD bgcolor='' >138</TD>
+<TD bgcolor='' >PH8</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='#00AAFF' >eMIOS_1_10</TD>
+<TD bgcolor='#00AAFF' >IO</TD>
+<TD bgcolor='#C78DF5' >PCS_2.2</TD>
+<TD bgcolor='#C78DF5' >O</TD>
+<TD bgcolor='#C86400' >ADC_0_MA0</TD>
+<TD bgcolor='#C86400' >O</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#999999' >GPIO Tristate</TD>
+<TD bgcolor='#999999' >--</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >121</TD>
+<TD bgcolor='' >127</TD>
+<TD bgcolor='' >PH9</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TCK</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TCK</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+</TR>
+<TR>
+<TD bgcolor='' >122</TD>
+<TD bgcolor='' >120</TD>
+<TD bgcolor='' >PH10</TD>
+<TD bgcolor='#3C6450' >GPIO</TD>
+<TD bgcolor='#3C6450' >IO</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TMS</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='' ></TD>
+<TD bgcolor='#F6CFA1' >TMS</TD>
+<TD bgcolor='#F6CFA1' >I</TD>
+<TD bgcolor='' ></TD>
+</TR>
+</TABLE>
+</BODY></HTML>

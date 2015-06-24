@@ -1,0 +1,306 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: LINFlex_5  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><font face='arial'><b><font face='Arial'>General Configuration</font></b><br><br>LINFlex module configured in <u><font face='arial' color='blue'>Slave Mode</font></u><br>Loopback Mode is <u><font face='arial' color='blue'>Disabled</font></u>, Self Test Mode is <u><font face='arial' color='blue'>Disabled</font></u><br>Receive Buffer <u><font face='arial' color='blue'>not locked</font></u> on overrun<br>Break length in Master mode is <u><font face='arial' color='blue'>10 bits</font></u><br>Slave Mode Break Detection Threshold is <u><font face='arial' color='blue'>11-bit break</font></u><br><u><font face='arial' color='blue'>Rx interrupt</font></u> generated if ID does not match any filter.<br>The Sleep mode is exited <u><font face='arial' color='blue'>on software request</font></u><br><u><font face='arial' color='blue'>Checksum</font></u> field is sent after the required number of data bytes is sent.<br>Checksum calculation is <u><font face='arial' color='blue'>Disabled</font></u><br>LIN Slave Automatic Resynchronization is <u><font face='arial' color='blue'>Disabled</font></u><br>Idle on Bit Error :  Bit error <u><font face='arial' color='blue'>reset</font></u> LIN state machine<br><br>Idle on Identifier Parity Error : Identifier Parity error <u><font face='arial' color='blue'>reset</font></u> LIN state machine.<br>Program checksum is <u><font face='arial' color='blue'>0b0</font></u><br><br>Integer Baud Rate Factor = <u><font face='arial' color='blue'>0</font></u><br>Fractional Baud Rate Factor = <u><font face='arial' color='blue'>0</font></u><br><br>Baud Rate (Symbols/sec) = Fcpu/(16*LFDIV)<br>Where ,  LFDIV =  (Mantissa + Fraction) = <u><font face='arial' color='blue'>0.0</font></u>+<u><font face='arial' color='blue'>0.0/16</font></u>=<u><font face='arial' color='blue'>0.0</font></u><br>Baud Rate (Symbols/sec) = <u><font face='arial' color='blue'>1.6E7</font></u> /(16*<u><font face='arial' color='blue'>0.0</font></u>) = <u><font face='arial' color='blue'>Infinity</font></u><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>LINFLEX_5_LINCR1</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/LINFLEX/LINFLEX_LINCR1.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>LinFlex 5 control register 1 </font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE54002 : 0x2</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0081 : 0x0082</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>LinFlex 5 control register 1 </font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CCD</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Checksum will be calculated by  Hardware</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CFD</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Checksum transmission is Enabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LASE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Automatic resynchronization is Disabled when LIN is in slave mode. </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>AWUM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Automatic Wakeup is Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MBL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Break Length in Master mode is 10 bits</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BF</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Bypass Filter is Enabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SFTM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Self Test Mode is Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LBKM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Loopback Mode is Disabled so LIN will not receive its own transmitted messages.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MME</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>This bits are used to Determine the Master/Slave mode and has the current values as Slave Mode (i.e. DI = slave, EN = Master)</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SBDT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Break Length in Slave mode is 11-bit break bits</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RBLM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Receiver Buffer Locked Mode is not locked so once the Slave Receive Buffer is full the next incoming message overwrites the previous one</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>INIT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Initialization Request</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>LINFLEX_5_LINCR2</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/LINFLEX/LINFLEX_LINCR2.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>LinFlex 5 control register 2</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE54032 : 0x32</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x6000 : 0x6000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>LinFlex 5 control register 2</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IOBE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>On bit error LIN state machine gets reset.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>IOPE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>1</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>On Identifier Parity error LIN state machine gets reset.</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>WURQ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Wake-up Generation Request</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>4</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DDRQ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Data Discard Request</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>5</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DTRQ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Data Transmission Request</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ABRQ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Abort Request</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>HTRQ</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Header Transmission Request</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>LINFLEX_5_LINCFR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/LINFLEX/LINFLEX_LINCFR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>LinFlex 5 Checksum Field Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE5402E : 0x2E</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>LinFlex 5 Checksum Field Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CF[0:7]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>CRC value 0x0 will be transmitted after data bytes.</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>LINFLEX_5_LINFBRR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/LINFLEX/LINFLEX_LINFBRR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>LinFlex 5 Fractional Baudrate register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE54026 : 0x26</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>LinFlex 5 Fractional Baudrate register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIV_F[0:3]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Fractional Baud Factor = 0</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>LINFLEX_5_LINIBRR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/LINFLEX/LINFLEX_LINIBRR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>LinFlex 5 Integer Baudrate register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE5402A : 0x2A</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x0000 : 0x0000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>LinFlex 5 Integer Baudrate register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DIV_M[0:12]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Mantissa for Baud Rate calculation = 0</font> </TD>
+</TR>
+</TABLE>
+<br><br></font> </BODY></HTML>

@@ -1,0 +1,221 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: CMU Setup  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><font face='arial'><b><font face='Arial'>CMU0 Configuration</font></b><br><br>CMU0 Module is <u><font face='arial' color='blue'>Disabled </font></u><br><br>The details for CMU0 parameters are as follows,</font> <TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#CCFFCC"><b><center><h3>CMU0</h3></center></b></TD></TR><TR>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Parameter</font></center></b>  </TD>
+<TD ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>High Frequency Reference (for FMPLL0)</font> </TD>
+<TD ><font face='arial' color='blue'>4095</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>Low Frequency Reference (for FMPLL0)</font> </TD>
+<TD ><font face='arial' color='blue'>0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>Measurement Duration (IRC Clock Cycles)</font> </TD>
+<TD ><font face='arial' color='blue'>0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>IRC (fast) Clock Divider</font> </TD>
+<TD ><font face='arial' color='blue'>8</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'>RC Oscillator Selected for Calibration</font> </TD>
+<TD ><font face='arial' color='blue'>16MHz IRC</font> </TD>
+</TR>
+</TABLE>
+<font face='arial'><br>With reference to parameter table above, the High & Low Frequency Reference Value in frequency units is given by following formulas<br><br>High Frequency Reference = (HFREF_A[11:0]/16) * (FRC/4)<br>=(4095/16)*(16/4) <br>High Frequency Reference = <font face='arial' color='blue'>1023.75</font>  MHz<br><br>Low Frequency Reference = (LFREF_A[11:0]/16) * (FRC/4)<br>=(0/16)* (16/4) <br>Low Frequency Reference = <font face='arial' color='blue'>0.0</font>  MHz<br><br>The IRC Clock Divided Frequency is given by following formula,<br>IRC Clock Divided Frequency = CK_IRC/2^RCDIV<br>= 16/2^3<br>IRC Clock Divided Frequency = <font face='arial' color='blue'>2.0</font>  MHz</font> <font face='arial'><br><br><b><font face='Arial'>Register</font></b><br><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CMU_0_CSR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/CMU/CMU_0_CSR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>CMU FMPLL0 Control Status Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0100 : 0x0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000006 : 0x00000006</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>CMU FMPLL0 Control Status Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>SFM</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Start Frequency Measure</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9-21</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>22-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CKSEL1</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>RC Oscillator(s) selection bit: 16MHz IRC</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-28</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>29-30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RCDIV</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>11</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>IRC Clock Division factor: 8</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CME_A</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Clock Monitoring Unit 0: Disabled</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CMU_0_HFREFR_A</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/CMU/CMU_n_HFREFR_A.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>FMPLL0 High Frequency Reference Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0108 : 0x8</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000FFF : 0x00000FFF</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>FMPLL0 High Frequency Reference Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-19</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>reserved</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'></font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>20-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>HFREFR_A[11:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000111111111111</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>High Frequency Reference Value for FMPLL0: 4095 </font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CMU_0_LFREFR_A</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/CMU/CMU_n_LFREFR_A.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>FMPLL0 Low Frequency Reference Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE010C : 0xC</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>FMPLL0 Low Frequency Reference Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-19</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>reserved</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'></font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>20-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>LFREFR_A[11:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Low Frequency Reference Value for FMPLL0: 0 </font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>CMU_0_MDR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/CMU/CMU_0_MDR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Measurement Duration Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xC3FE0118 : 0x18</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Measurement Duration Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>reserved</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'></font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MD[19:0]</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>IRC Measurement Duration in IRC Clock Cycles: 0</font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

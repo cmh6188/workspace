@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<br><b><center><font face='arial'  size='5' align=>Device Settings for: CAN Sampler Configuration  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><font face='arial'><b><font face='Arial'> CAN Sampler Configuration</font></b><br><br><font face='arial'>Sample and store the </font> <font face='arial' color='blue'>Second Frame (i.e SF_Mode Selected).</font> <br><font face='arial'> CAN <font face='arial' color='blue'>RX0</font> </font>  is selected.<br><font face='arial'>Baud Rate Prescaler is selected to </font> <font face='arial' color='blue'>1</font> <br><font face='arial'>CAN sampler is </font> <font face='arial' color='blue'>Disabled.</font> <br><font face='arial'>CAN Speed is </font> <font face='arial' color='blue'>2000</font> <font face='arial'>(kbits/sec)</font> <br><font face='arial'>Sample Period is </font> <font face='arial' color='blue'>0.062</font> <font face='arial'> ?s</font> <br><br><b><font face='Arial'>Register</font></b><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>SP_CR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/FLEXCAN/SP_CR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>CAN Sampler Control register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE70000 : 0x0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>CAN Sampler Control register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-15</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>16</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>RX_Complete</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Sampled frame received complete</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>17</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BUSY</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Status of sampling</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>18</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>Active_CK</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Clock Source</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>19-21</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>22</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>Mode</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'><font face='arial'> Sample Mode: </font> <font face='arial'>SF_Mode</font> </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>23-25</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CAN_RX_SEL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'><font face='arial'> Selected Receive CAN is: </font> <font face='arial'>RX0</font> </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>26-30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>BRP</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'><font face='arial'> Baud Rate Prescaler is: </font> <font face='arial'>1</font> </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CAN_Sampler_EN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'><font face='arial'> CAN Sampler is: </font> <font face='arial'>Disabled</font> </font> </TD>
+</TR>
+</TABLE>
+</font> </BODY></HTML>

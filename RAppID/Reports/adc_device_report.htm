@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<meta name='Author' content='Freescale Semiconductor'>
+</HEAD>
+<BODY>
+<b><center><font face='arial'  size='5' align=>Device Settings for: ADC_0  </font></center></b> 
+<hr size='1' color='#3366FF'>
+<br><br><font face='arial'><h3><font face='Arial'>ADC General Setup Information</font></h3><b><font face='Arial'>General Device Settings</font></b><br><br><font face='arial'>Normal Conversion</font> <u><font face='arial' color='blue'>will not </font></u><font face='arial'> start when external Start Signal is detected. Clock  </font> <u><font face='arial' color='blue'>will not</font></u><font face='arial'>  automatically switch off when ADC is idle.</font> <br><br><font face='arial'>Conversion of ADC command shall be  </font> <u><font face='arial' color='blue'>one channel chain at a time</font></u><font face='arial'>. After conversion data is </font> <u><font face='arial' color='blue'>right </font></u><font face='arial'> align also old conversion data will be</font> <u><font face='arial' color='blue'>not overwritten</font></u><font face='arial'> by newer result, hence newer result </font> <u><font face='arial' color='blue'>will </font></u><font face='arial'>  be discarded. </font> <br><br><font face='arial'>Delay between external decode signal and start of sampling pulse is set to </font> <u><font face='arial' color='blue'>0</font></u><font face='arial'> clock cycles.  </font> <font face='arial'>Delay between external power signal and start of sampling pulse is set to </font> <u><font face='arial' color='blue'>0</font></u><font face='arial'> clock cycles.  </font> <br><br><font face='arial'>External Trigger Injected is   </font> <u><font face='arial' color='blue'>Disabled </font></u><font face='arial'>with Trigger Injection Edge as </font> <u><font face='arial' color='blue'>Falling.</font></u><br><font face='arial'>Power Down Mode is </font> <u><font face='arial' color='blue'>Disabled. </font></u><font face='arial'>ADC Clock Selected as </font> <u><font face='arial' color='blue'>System clock / 2 </font></u><br><font face='arial'>ADC/Cross Triggering unit is </font> <u><font face='arial' color='blue'>Disabled.</font></u><br><br><b><font face='Arial'>Register</font></b><br><br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ADC_0_MCR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ADC/ADCx_MCR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Main Configuration Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE00000 : 0x0</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000001</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Main Configuration Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>OWREN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Conversion data Overwrite: Disabled</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>1</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>WLSIDE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Conversion Data Aligned: Right</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>2</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>MODE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Conversion Mode Selected: Scan </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>3-6</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>7</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>NSTART</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>if set, Analog conversion in Normal mode will be Started</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>8</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>9</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>JTRGEN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>External Trigger Signal in Injected Mode: Disabled </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>10</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>JEDGE</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>External signal Trigger Edge: Falling </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>11</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>JSTART</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>if set, Analog conversion in Injected mode will be Started</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>12-13</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>14</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>CTUEN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>ADC/CTU Cross Triggering Unit: Disabled </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>15-22</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ADCLKSEL</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>ADC Clock selected as : System clock / 2 </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ABORTCHAIN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>When this bit is set ongoing chain conversion is aborted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>25</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ABORT</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>if set, Analog conversion in Normal mode will be aborted</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>26</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>ACK0</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Auto Clock Off feature: Disabled </font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>27-30</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PWDN</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>0</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Power Down Mode is Disabled </font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ADC_0_DSDR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ADC/ADCx_DSDR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Decode Signals Delay Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE000C4 : 0xC4</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Decode Signals Delay Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>DSD</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Decode Signal Delay: 0 ADC Clocks</font> </TD>
+</TR>
+</TABLE>
+<br><br><TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="1" bgcolor= "#CCFFCC"><b><center><h3>ADC_0_PDEDR</h3></center></b></TD></TR><TR>
+<TD ><center><input type='image' SRC='Images/Register_Images/ADC/ADCx_PDEDR.jpg'></center></TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR><TD colspan="2" bgcolor= "#FFFFFF"><center><font face='arial'>Power-down Exit Delay Register</font> </center></TD></TR><TR>
+<TD ><font face='arial'><b><font face='Arial'>Address : Offset</font></b></font> </TD>
+<TD ><font face='arial'>0xFFE000C8 : 0xC8</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Value (Current : Reset)</font></b></font> </TD>
+<TD ><font face='arial'>0x00000000 : 0x00000000</font> </TD>
+</TR>
+<TR>
+<TD ><font face='arial'><b><font face='Arial'>Description</font></b></font> </TD>
+<TD ><font face='arial'>Power-down Exit Delay Register</font> </TD>
+</TR>
+</TABLE>
+<TABLE  cellpadding='2' border='2' bordercolor='#000000bgcolor= '#FFFFFF' ' width='100%' align = 'center' >
+<TR>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Bit</font></center></b>  </TD>
+<TD align='center' width='10%' ><b><center><font face='arial' color='#000000' size='2'>Field</font></center></b>  </TD>
+<TD align='center' width='20%' ><b><center><font face='arial' color='#000000' size='2'>Value</font></center></b>  </TD>
+<TD align='left' width='60%' ><b><center><font face='arial' color='#000000' size='2'>Description</font></center></b>  </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>0-23</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>-</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>000000000000000000000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>Reserved</font> </TD>
+</TR>
+<TR>
+<TD align='center' width='10%' ><font face='arial'>24-31</font> </TD>
+<TD align='center' width='10%' ><font face='arial'>PDD</font> </TD>
+<TD align='center' width='20%' ><font face='arial'>00000000</font> </TD>
+<TD align='left' width='60%' ><font face='arial'>The Power Down Delay: 0 ADC Clocks Cycle</font> </TD>
+</TR>
+</TABLE>
+<br><br></font> </BODY></HTML>
